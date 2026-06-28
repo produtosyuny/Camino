@@ -1147,7 +1147,7 @@ function renderFinanceiro() {
     meses.forEach(mes => {
       let totalMes = 0;
       let row = `<tr>
-        <td style="font-weight:600; color:#FFF; position:sticky; left:0; background:var(--surface);">${mes}</td>`;
+        <td style="font-weight:600; color:var(--text); position:sticky; left:0; background:var(--surface);">${mes}</td>`;
       filtradas.forEach(u => {
         const soma = u.fluxo_financeiro
           .filter(f => f.data_vencimento === mes)
