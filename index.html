@@ -19,27 +19,28 @@
   --carvao:   #141414;
   --offwhite: #E4E3DE;
   --bege:     #C7B299;
-  --bege-dk:  #A0896E;
-  --azul:     #00B0B9;
+  --bege-dk:  #7A6448;   /* variante escura p/ texto sobre fundo claro (mantém contraste) */
+  --azul:     #00B0B9;   /* teal Yuny (barra do SharePoint/logo) */
+  --azul-dk:  #03787C;   /* teal escuro (faixa "Intranet") */
 
-  --bg:       var(--carvao);
-  --surface:  #1A1A1A;
-  --surface2: #242424;
-  --surface3: #2C2C2C;
-  --border:   rgba(228,227,222,0.10);
-  --border2:  rgba(228,227,222,0.18);
-  --text:     var(--offwhite);
-  --text-muted: rgba(228,227,222,0.55);
+  --bg:       #F3F6F6;
+  --surface:  #FFFFFF;
+  --surface2: #EFF4F4;
+  --surface3: #B9C7C7;
+  --border:   rgba(15,23,23,0.08);
+  --border2:  rgba(15,23,23,0.15);
+  --text:     var(--carvao);
+  --text-muted: rgba(15,23,23,0.55);
   --gold:     #C7B299;   /* alias explícito para evitar bug */
 
   /* Status — cores de borda lateral */
-  --st-disponivel:       rgba(228,227,222,0.5);
-  --st-proposta:         #86EFAC;
+  --st-disponivel:       #9CA3AF;
+  --st-proposta:         #4ADE80;
   --st-processo:         #22C55E;
   --st-reserva_venda:    #F59E0B;
   --st-contrato_enviado: #3B82F6;
   --st-cv_assinado:      #15803D;
-  --st-suspensa:         #444;
+  --st-suspensa:         #6B7280;
 }
 
 /* ── RESET & BASE ── */
@@ -51,8 +52,8 @@ body { font-family: 'Inter', system-ui, sans-serif; background: var(--bg); color
 
 /* ── HEADER ── */
 header {
-  background: var(--surface);
-  border-bottom: 1px solid var(--border2);
+  background: var(--azul);
+  border-bottom: 1px solid var(--azul-dk);
   padding: 0 1.5rem;
   height: 56px;
   display: flex;
@@ -63,19 +64,19 @@ header {
 }
 .header-left { display: flex; align-items: center; gap: 1.5rem; }
 .logo-title { display: flex; align-items: baseline; gap: 0.75rem; }
-.logo-title h1 { font-size: 1rem; font-weight: 600; letter-spacing: 0.12em; color: var(--bege); text-transform: uppercase; }
-.logo-badge { font-size: 0.72rem; color: var(--text-muted); background: rgba(199,178,153,0.08); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid rgba(199,178,153,0.15); letter-spacing: 0.08em; }
+.logo-title h1 { font-size: 1rem; font-weight: 600; letter-spacing: 0.12em; color: #FFFFFF; text-transform: uppercase; }
+.logo-badge { font-size: 0.72rem; color: rgba(255,255,255,0.85); background: rgba(255,255,255,0.16); padding: 0.2rem 0.6rem; border-radius: 4px; border: 1px solid rgba(255,255,255,0.25); letter-spacing: 0.08em; }
 
 .nav-tabs { display: flex; gap: 0.25rem; }
-.tab-btn { background: transparent; border: none; color: var(--text-muted); padding: 0.45rem 1rem; font-size: 0.82rem; font-weight: 500; cursor: pointer; border-radius: 4px; transition: all 0.2s; display: flex; align-items: center; gap: 0.4rem; font-family: inherit; }
-.tab-btn:hover { color: var(--offwhite); background: rgba(228,227,222,0.05); }
-.tab-btn.active { color: var(--bege); background: rgba(199,178,153,0.1); border: 1px solid rgba(199,178,153,0.2); }
+.tab-btn { background: transparent; border: none; color: rgba(255,255,255,0.75); padding: 0.45rem 1rem; font-size: 0.82rem; font-weight: 500; cursor: pointer; border-radius: 4px; transition: all 0.2s; display: flex; align-items: center; gap: 0.4rem; font-family: inherit; }
+.tab-btn:hover { color: #FFFFFF; background: rgba(255,255,255,0.12); }
+.tab-btn.active { color: var(--azul-dk); background: #FFFFFF; border: 1px solid transparent; }
 
 .header-right { display: flex; align-items: center; gap: 0.75rem; }
-.sync-status { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: var(--text-muted); cursor: pointer; padding: 0.3rem 0.6rem; border-radius: 4px; transition: background 0.2s; }
-.sync-status:hover { background: var(--surface2); }
+.sync-status { display: flex; align-items: center; gap: 0.5rem; font-size: 0.78rem; color: rgba(255,255,255,0.85); cursor: pointer; padding: 0.3rem 0.6rem; border-radius: 4px; transition: background 0.2s; }
+.sync-status:hover { background: rgba(255,255,255,0.14); }
 .sync-dot { width: 7px; height: 7px; background: #EF4444; border-radius: 50%; transition: all 0.3s; }
-.sync-dot.online { background: var(--azul); box-shadow: 0 0 8px rgba(0,176,185,0.5); }
+.sync-dot.online { background: #4ADE80; box-shadow: 0 0 8px rgba(74,222,128,0.6); }
 .sync-dot.loading { background: var(--bege); animation: pulse 1s infinite; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.4} }
 
@@ -98,7 +99,7 @@ header {
 /* ── SEARCH BAR ── */
 .search-bar { position: relative; }
 .search-bar input { background: var(--surface); border: 1px solid var(--border2); border-radius: 6px; padding: 0.55rem 1rem 0.55rem 2.25rem; font-size: 0.85rem; color: var(--text); width: 100%; font-family: inherit; transition: border-color 0.2s; }
-.search-bar input:focus { border-color: var(--bege); outline: none; }
+.search-bar input:focus { border-color: var(--azul); outline: none; }
 .search-bar input::placeholder { color: var(--text-muted); }
 .search-bar i { position: absolute; left: 0.65rem; top: 50%; transform: translateY(-50%); color: var(--text-muted); font-size: 1rem; pointer-events: none; }
 
@@ -106,17 +107,17 @@ header {
 .kpis-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; }
 .kpi-card { background: var(--surface); border: 1px solid var(--border); padding: 0.85rem 1rem; border-radius: 6px; display: flex; flex-direction: column; gap: 0.2rem; min-height: 80px; cursor: pointer; transition: border-color 0.2s, background 0.2s, transform 0.15s; user-select: none; position: relative; }
 .kpi-card:hover { border-color: var(--border2); background: var(--surface2); transform: translateY(-1px); }
-.kpi-card.kpi-active { border-color: var(--bege); background: rgba(199,178,153,0.07); }
-.kpi-card.kpi-active::after { content: '✕ limpar'; position: absolute; top: 0.4rem; right: 0.6rem; font-size: 0.6rem; color: var(--bege); opacity: 0.7; letter-spacing: 0.05em; }
+.kpi-card.kpi-active { border-color: var(--azul); background: rgba(0,176,185,0.06); }
+.kpi-card.kpi-active::after { content: '✕ limpar'; position: absolute; top: 0.4rem; right: 0.6rem; font-size: 0.6rem; color: var(--azul-dk); opacity: 0.8; letter-spacing: 0.05em; }
 .kpi-card p { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; font-weight: 500; letter-spacing: 0.05em; }
-.kpi-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--offwhite); }
-.kpi-sub { font-size: 0.72rem; color: var(--bege); font-weight: 500; display: flex; justify-content: space-between; margin-top: 0.1rem; }
+.kpi-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--text); }
+.kpi-sub { font-size: 0.72rem; color: var(--bege-dk); font-weight: 500; display: flex; justify-content: space-between; margin-top: 0.1rem; }
 
 /* ── ESPELHO ── */
 .espelho-container { background: var(--surface); border: 1px solid var(--border); padding: 1.25rem; border-radius: 8px; }
 .espelho-top { display: flex; justify-content: space-between; align-items: center; margin-bottom: 1rem; gap: 1rem; }
 .espelho-top-left { display: flex; flex-direction: column; gap: 0.25rem; }
-.espelho-title { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; color: var(--bege); text-transform: uppercase; }
+.espelho-title { font-size: 0.8rem; font-weight: 600; letter-spacing: 0.1em; color: var(--bege-dk); text-transform: uppercase; }
 
 /* Legenda */
 .legenda { display: flex; flex-wrap: wrap; gap: 0.5rem 1rem; }
@@ -128,13 +129,13 @@ header {
 .label-andar { width: 36px; font-size: 0.7rem; color: var(--text-muted); text-align: right; flex-shrink: 0; }
 
 .unit-box { flex: 1; background: var(--surface2); border: 1px solid var(--border); padding: 0.65rem 0.75rem; border-radius: 4px; cursor: pointer; transition: border-color 0.15s, transform 0.15s; position: relative; min-width: 0; }
-.unit-box:hover { border-color: var(--bege); transform: translateY(-1px); }
-.unit-box.selected { border-color: var(--bege) !important; box-shadow: 0 0 14px rgba(199,178,153,0.15); }
+.unit-box:hover { border-color: var(--azul); transform: translateY(-1px); }
+.unit-box.selected { border-color: var(--azul) !important; box-shadow: 0 0 14px rgba(0,176,185,0.18); }
 .unit-box.hidden-search { opacity: 0.18; pointer-events: none; }
 
-.unit-name { font-size: 0.85rem; font-weight: 600; color: var(--offwhite); }
+.unit-name { font-size: 0.85rem; font-weight: 600; color: var(--text); }
 .unit-meta { font-size: 0.68rem; color: var(--text-muted); display: flex; justify-content: space-between; margin-top: 0.15rem; align-items: center; }
-.unit-fase-badge { font-size: 0.6rem; padding: 1px 5px; border-radius: 3px; background: rgba(199,178,153,0.15); color: var(--bege); font-weight: 600; flex-shrink: 0; }
+.unit-fase-badge { font-size: 0.6rem; padding: 1px 5px; border-radius: 3px; background: rgba(199,178,153,0.18); color: var(--bege-dk); font-weight: 600; flex-shrink: 0; }
 
 /* Status border-left */
 .u-disponivel       { border-left: 3px solid var(--st-disponivel); }
@@ -151,7 +152,7 @@ header {
 .painel-vazio p { font-size: 0.85rem; line-height: 1.6; }
 
 .editor-header { padding: 1.25rem 1.5rem; border-bottom: 1px solid var(--border); display: flex; justify-content: space-between; align-items: flex-start; flex-shrink: 0; }
-.editor-header h2 { font-size: 1.1rem; color: var(--offwhite); font-weight: 600; }
+.editor-header h2 { font-size: 1.1rem; color: var(--text); font-weight: 600; }
 .editor-header p { font-size: 0.78rem; color: var(--text-muted); margin-top: 0.2rem; }
 .editor-body { padding: 1.25rem 1.5rem; display: flex; flex-direction: column; gap: 1.25rem; overflow-y: auto; }
 .editor-footer { padding: 1rem 1.5rem; border-top: 1px solid var(--border); background: var(--surface2); display: flex; justify-content: flex-end; gap: 0.75rem; flex-shrink: 0; }
@@ -159,8 +160,8 @@ header {
 /* ── FORMS ── */
 .form-group { display: flex; flex-direction: column; gap: 0.4rem; }
 label { font-size: 0.7rem; font-weight: 500; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-input, select, textarea { background: var(--surface2); border: 1px solid var(--border2); padding: 0.6rem 0.75rem; border-radius: 4px; color: var(--offwhite); font-family: inherit; font-size: 0.88rem; width: 100%; transition: border-color 0.2s; }
-input:focus, select:focus, textarea:focus { border-color: var(--bege); outline: none; }
+input, select, textarea { background: var(--surface2); border: 1px solid var(--border2); padding: 0.6rem 0.75rem; border-radius: 4px; color: var(--text); font-family: inherit; font-size: 0.88rem; width: 100%; transition: border-color 0.2s; }
+input:focus, select:focus, textarea:focus { border-color: var(--azul); outline: none; }
 select { appearance: none; -webkit-appearance: none; background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24'%3E%3Cpath fill='%23888' d='M7 10l5 5 5-5z'/%3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10px center; padding-right: 28px; cursor: pointer; }
 select option { background: var(--surface2); }
 textarea { resize: vertical; min-height: 65px; }
@@ -169,7 +170,7 @@ textarea { resize: vertical; min-height: 65px; }
 .esteira-wrap { display: flex; flex-direction: column; gap: 0.4rem; }
 .step-btn-v { display: flex; align-items: center; gap: 0.75rem; padding: 0.55rem 0.75rem; border: 1px solid var(--border); background: var(--surface2); border-radius: 4px; cursor: pointer; font-family: inherit; font-size: 0.8rem; color: var(--text-muted); transition: all 0.2s; text-align: left; width: 100%; }
 .step-btn-v:hover { border-color: var(--border2); color: var(--text); }
-.step-btn-v.active { background: rgba(199,178,153,0.1); border-color: rgba(199,178,153,0.35); color: var(--bege); font-weight: 600; }
+.step-btn-v.active { background: rgba(199,178,153,0.15); border-color: rgba(199,178,153,0.4); color: var(--bege-dk); font-weight: 600; }
 .step-btn-v.done { opacity: 0.5; }
 .step-num { width: 22px; height: 22px; border-radius: 50%; border: 1px solid var(--border2); display: flex; align-items: center; justify-content: center; font-size: 0.7rem; font-weight: 600; flex-shrink: 0; }
 .step-btn-v.active .step-num { background: var(--bege); border-color: var(--bege); color: var(--carvao); }
@@ -178,18 +179,18 @@ textarea { resize: vertical; min-height: 65px; }
 /* ── FLUXO TABLE ── */
 .fin-table { width: 100%; border-collapse: collapse; }
 .fin-table th { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; padding: 0.5rem 0.6rem; text-align: left; border-bottom: 1px solid var(--border); font-weight: 500; letter-spacing: 0.05em; }
-.fin-table td { padding: 0.4rem 0.35rem; border-bottom: 1px solid rgba(255,255,255,0.03); font-size: 0.88rem; vertical-align: middle; }
+.fin-table td { padding: 0.4rem 0.35rem; border-bottom: 1px solid var(--border); font-size: 0.88rem; vertical-align: middle; }
 .fin-table tr:last-child td { border-bottom: none; }
 .fin-table td input { padding: 0.4rem 0.5rem; font-size: 0.82rem; }
 .fin-total-row { display: flex; justify-content: space-between; align-items: center; padding: 0.65rem 0.75rem; background: var(--surface2); border-radius: 4px; margin-top: 0.5rem; border: 1px solid var(--border); }
 .fin-total-label { font-size: 0.72rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; }
-.fin-total-val { font-size: 1.05rem; font-weight: 600; color: var(--bege); }
+.fin-total-val { font-size: 1.05rem; font-weight: 600; color: var(--bege-dk); }
 
 /* ── BOTÕES ── */
 .btn { display: inline-flex; align-items: center; justify-content: center; gap: 0.4rem; padding: 0.55rem 1.1rem; font-size: 0.82rem; font-weight: 500; border-radius: 4px; cursor: pointer; transition: all 0.2s; border: none; font-family: inherit; white-space: nowrap; }
 .btn-gold    { background: var(--bege); color: var(--carvao); font-weight: 600; }
 .btn-gold:hover { background: #B39F88; }
-.btn-sec     { background: var(--surface2); border: 1px solid var(--border2); color: var(--offwhite); }
+.btn-sec     { background: var(--surface2); border: 1px solid var(--border2); color: var(--text); }
 .btn-sec:hover { background: var(--surface3); }
 .btn-danger  { background: rgba(239,68,68,0.1); color: #EF4444; border: 1px solid rgba(239,68,68,0.2); padding: 0.35rem 0.5rem; }
 .btn-danger:hover { background: rgba(239,68,68,0.2); }
@@ -201,10 +202,10 @@ textarea { resize: vertical; min-height: 65px; }
 
 .filter-bar { background: var(--surface); border: 1px solid var(--border); padding: 1rem 1.25rem; border-radius: 8px; display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 0.75rem; }
 .filter-options { display: flex; align-items: center; gap: 1.25rem; flex-wrap: wrap; }
-.filter-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--bege); letter-spacing: 0.05em; flex-shrink: 0; }
+.filter-title { font-size: 0.75rem; font-weight: 600; text-transform: uppercase; color: var(--bege-dk); letter-spacing: 0.05em; flex-shrink: 0; }
 .checkbox-group { display: flex; gap: 1rem; align-items: center; flex-wrap: wrap; }
-.checkbox-label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; cursor: pointer; color: var(--offwhite); }
-.checkbox-label input { width: 14px; height: 14px; accent-color: var(--bege); cursor: pointer; flex-shrink: 0; }
+.checkbox-label { display: flex; align-items: center; gap: 0.35rem; font-size: 0.8rem; cursor: pointer; color: var(--text); }
+.checkbox-label input { width: 14px; height: 14px; accent-color: var(--bege-dk); cursor: pointer; flex-shrink: 0; }
 
 .action-group { display: flex; gap: 0.6rem; }
 
@@ -214,9 +215,9 @@ textarea { resize: vertical; min-height: 65px; }
 /* Tabela financeiro consolidado */
 #tabelaFluxoCompilado { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
 #tabelaFluxoCompilado th { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; padding: 0.75rem 1rem; text-align: left; border-bottom: 1px solid var(--border); background: var(--surface2); white-space: nowrap; font-weight: 500; }
-#tabelaFluxoCompilado td { padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); white-space: nowrap; }
+#tabelaFluxoCompilado td { padding: 0.6rem 1rem; border-bottom: 1px solid var(--border); white-space: nowrap; }
 #tabelaFluxoCompilado tbody tr:last-child td { border-bottom: none; }
-#tabelaFluxoCompilado tbody tr:hover td { background: rgba(228,227,222,0.02); }
+#tabelaFluxoCompilado tbody tr:hover td { background: rgba(0,176,185,0.05); }
 /* ── MINI RELATÓRIO DE FILTRO ── */
 .rel-header {
   padding: 1.25rem 1.5rem;
@@ -229,11 +230,11 @@ textarea { resize: vertical; min-height: 65px; }
 }
 .rel-header-top { display: flex; align-items: center; gap: 0.6rem; }
 .rel-status-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
-.rel-title { font-size: 1rem; font-weight: 600; color: var(--offwhite); }
+.rel-title { font-size: 1rem; font-weight: 600; color: var(--text); }
 .rel-count { font-size: 0.72rem; background: var(--surface2); border: 1px solid var(--border2); color: var(--text-muted); padding: 0.15rem 0.55rem; border-radius: 20px; }
 .rel-vgv-total { text-align: right; }
 .rel-vgv-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.15rem; }
-.rel-vgv-val { font-size: 1.1rem; font-weight: 600; color: var(--bege); }
+.rel-vgv-val { font-size: 1.1rem; font-weight: 600; color: var(--bege-dk); }
 
 .rel-body { flex: 1; overflow-y: auto; }
 .rel-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
@@ -252,16 +253,16 @@ textarea { resize: vertical; min-height: 65px; }
 }
 .rel-row { cursor: pointer; transition: background 0.15s; }
 .rel-row:hover td { background: rgba(199,178,153,0.04); }
-.rel-row:hover .rel-id .rel-badge { color: var(--bege); }
-.rel-td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: top; }
+.rel-row:hover .rel-id .rel-badge { color: var(--bege-dk); }
+.rel-td { padding: 0.75rem 1rem; border-bottom: 1px solid var(--border); vertical-align: top; }
 .rel-table tbody tr:last-child .rel-td { border-bottom: none; }
 
 .rel-id { min-width: 90px; }
-.rel-badge { display: block; font-weight: 600; color: var(--offwhite); margin-bottom: 0.15rem; transition: color 0.15s; }
+.rel-badge { display: block; font-weight: 600; color: var(--text); margin-bottom: 0.15rem; transition: color 0.15s; }
 .rel-tipo { font-size: 0.68rem; color: var(--text-muted); }
 .rel-substatus { display: block; font-size: 0.65rem; font-weight: 600; margin-top: 0.2rem; }
 .rel-cliente { color: var(--text); min-width: 100px; }
-.rel-vgv { text-align: right; font-weight: 500; color: var(--bege); white-space: nowrap; min-width: 110px; }
+.rel-vgv { text-align: right; font-weight: 500; color: var(--bege-dk); white-space: nowrap; min-width: 110px; }
 .rel-obs { font-size: 0.75rem; color: var(--text-muted); max-width: 160px; line-height: 1.4; }
 
 .rel-footer {
@@ -335,7 +336,7 @@ textarea { resize: vertical; min-height: 65px; }
       <div class="kpi-card" id="kpiCard-PROPOSTA" onclick="filtrarPorStatus('PROPOSTA')" title="Clique para filtrar no espelho">
         <p>VGV Em Proposta</p>
         <h3 id="kpiVgvProposta">R$ 0</h3>
-        <div class="kpi-sub"><span id="countProposta">0 un</span><span style="color:#86EFAC">●</span></div>
+        <div class="kpi-sub"><span id="countProposta">0 un</span><span style="color:#4ADE80">●</span></div>
       </div>
       <div class="kpi-card" id="kpiCard-DISPONIVEL" onclick="filtrarPorStatus('DISPONIVEL')" title="Clique para filtrar no espelho">
         <p>Estoque Disponível</p>
@@ -382,7 +383,7 @@ textarea { resize: vertical; min-height: 65px; }
           <label class="checkbox-label"><input type="checkbox" id="chkContrato"       checked onchange="renderFinanceiro()"> <span style="color:#3B82F6">●</span> Contrato Enviado</label>
           <label class="checkbox-label"><input type="checkbox" id="chkReserva"        checked onchange="renderFinanceiro()"> <span style="color:#F59E0B">●</span> Reserva Venda</label>
           <label class="checkbox-label"><input type="checkbox" id="chkProcesso"       checked onchange="renderFinanceiro()"> <span style="color:#22C55E">●</span> Processo</label>
-          <label class="checkbox-label"><input type="checkbox" id="chkProposta"       checked onchange="renderFinanceiro()"> <span style="color:#86EFAC">●</span> Proposta</label>
+          <label class="checkbox-label"><input type="checkbox" id="chkProposta"       checked onchange="renderFinanceiro()"> <span style="color:#4ADE80">●</span> Proposta</label>
         </div>
       </div>
       <div class="action-group">
@@ -415,13 +416,13 @@ const GOOGLE_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbzYtg8Mwk-gZl
 //  CONSTANTES
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 const STATUS_CONFIG = {
-  DISPONIVEL:       { label: "Disponível",        color: "rgba(228,227,222,0.5)" },
-  PROPOSTA:         { label: "Proposta",           color: "#86EFAC" },
+  DISPONIVEL:       { label: "Disponível",        color: "#9CA3AF" },
+  PROPOSTA:         { label: "Proposta",           color: "#4ADE80" },
   PROCESSO:         { label: "Em Processo",        color: "#22C55E" },
   RESERVA_VENDA:    { label: "Reserva Venda",      color: "#F59E0B" },
   CONTRATO_ENVIADO: { label: "Contrato Enviado",   color: "#3B82F6" },
   CV_ASSINADO:      { label: "CV Assinado",        color: "#15803D" },
-  SUSPENSA:         { label: "Suspensa",           color: "#555" }
+  SUSPENSA:         { label: "Suspensa",           color: "#6B7280" }
 };
 
 // Agrupamentos de status: o card "Em Processo" soma PROCESSO + CONTRATO_ENVIADO
@@ -813,7 +814,7 @@ function renderGaveta(id) {
       </div>
       <div style="text-align:right">
         <div style="font-size:0.68rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.2rem">VGV Total</div>
-        <div style="font-size:1.1rem; font-weight:600; color:var(--bege)">${fmtBRL(totalAtual)}</div>
+        <div style="font-size:1.1rem; font-weight:600; color:var(--bege-dk)">${fmtBRL(totalAtual)}</div>
       </div>
     </div>
 
@@ -887,7 +888,7 @@ function renderGaveta(id) {
                 <td><input type="text"   value="${f.data_vencimento || ''}" placeholder="MM/AAAA" onchange="window.updateFluxoRow(${i},'data_vencimento',this.value)"></td>
                 <td><input type="text"   value="${f.descricao || ''}"       placeholder="Ato, Anual..." onchange="window.updateFluxoRow(${i},'descricao',this.value)"></td>
                 <td><input type="number" value="${f.valor || 0}"            step="0.01" style="text-align:right" onchange="window.updateFluxoRow(${i},'valor',this.value)"></td>
-                <td style="font-size:0.75rem; font-weight:600; color:var(--bege); text-align:right; padding-right:0.5rem;">${pct}%</td>
+                <td style="font-size:0.75rem; font-weight:600; color:var(--bege-dk); text-align:right; padding-right:0.5rem;">${pct}%</td>
                 <td><button class="btn btn-danger" onclick="window.deleteFluxoRow(${i})"><i class="ti ti-trash"></i></button></td>
               </tr>`;
             }).join('')}
@@ -1132,7 +1133,7 @@ function renderFinanceiro() {
       <span style="color:var(--text-muted); font-weight:400; font-size:0.65rem;">${u.cliente_nome || 'S/N'}</span>
     </th>`;
   });
-  headHTML += `<th style="text-align:right; color:var(--bege); min-width:120px;">Total Mês</th>
+  headHTML += `<th style="text-align:right; color:var(--bege-dk); min-width:120px;">Total Mês</th>
     <th style="text-align:right; color:#22C55E; min-width:120px;">Acumulado</th></tr>`;
 
   // Body
@@ -1158,7 +1159,7 @@ function renderFinanceiro() {
           : `<td ${dispCls} style="text-align:right; color:var(--text-muted); opacity:0.3;">—</td>`;
       });
       acum += totalMes;
-      row += `<td style="text-align:right; font-weight:600; color:var(--bege);">${fmtBRL(totalMes)}</td>`;
+      row += `<td style="text-align:right; font-weight:600; color:var(--bege-dk);">${fmtBRL(totalMes)}</td>`;
       row += `<td style="text-align:right; font-weight:600; color:#22C55E;">${fmtBRL(acum)}</td></tr>`;
       bodyHTML += row;
     });
@@ -1168,9 +1169,9 @@ function renderFinanceiro() {
       <td style="font-size:0.72rem; color:var(--text-muted); text-transform:uppercase; letter-spacing:0.05em; font-weight:600; position:sticky; left:0; background:var(--surface2);">Total Unidade</td>`;
     filtradas.forEach(u => {
       const tot = u.fluxo_financeiro.reduce((s, f) => s + (parseFloat(f.valor) || 0), 0);
-      totalRow += `<td ${dispCls} style="text-align:right; font-weight:600; color:var(--bege); background:rgba(199,178,153,0.04);">${fmtBRL(tot)}</td>`;
+      totalRow += `<td ${dispCls} style="text-align:right; font-weight:600; color:var(--bege-dk); background:rgba(199,178,153,0.06);">${fmtBRL(tot)}</td>`;
     });
-    totalRow += `<td style="text-align:right; font-weight:700; color:var(--bege); font-size:0.9rem;">${fmtBRL(acum)}</td>`;
+    totalRow += `<td style="text-align:right; font-weight:700; color:var(--bege-dk); font-size:0.9rem;">${fmtBRL(acum)}</td>`;
     totalRow += `<td></td></tr>`;
     bodyHTML += totalRow;
   }
@@ -1194,7 +1195,7 @@ function exportarFluxoExcel() {
 function exportarEspelhoImagem() {
   const area = document.getElementById("captureArea");
   showToast('Gerando imagem...', 'info', 2000);
-  html2canvas(area, { backgroundColor: "#1A1A1A", logging: false, scale: 2 }).then(canvas => {
+  html2canvas(area, { backgroundColor: "#FFFFFF", logging: false, scale: 2 }).then(canvas => {
     const a = document.createElement('a');
     a.download = `Espelho_Quaddra_Jesuino.png`;
     a.href = canvas.toDataURL();
