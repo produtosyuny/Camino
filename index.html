@@ -104,7 +104,10 @@ header {
 
 /* ── KPIs ── */
 .kpis-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: 0.75rem; }
-.kpi-card { background: var(--surface); border: 1px solid var(--border); padding: 0.85rem 1rem; border-radius: 6px; display: flex; flex-direction: column; gap: 0.2rem; min-height: 80px; }
+.kpi-card { background: var(--surface); border: 1px solid var(--border); padding: 0.85rem 1rem; border-radius: 6px; display: flex; flex-direction: column; gap: 0.2rem; min-height: 80px; cursor: pointer; transition: border-color 0.2s, background 0.2s, transform 0.15s; user-select: none; position: relative; }
+.kpi-card:hover { border-color: var(--border2); background: var(--surface2); transform: translateY(-1px); }
+.kpi-card.kpi-active { border-color: var(--bege); background: rgba(199,178,153,0.07); }
+.kpi-card.kpi-active::after { content: '✕ limpar'; position: absolute; top: 0.4rem; right: 0.6rem; font-size: 0.6rem; color: var(--bege); opacity: 0.7; letter-spacing: 0.05em; }
 .kpi-card p { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; font-weight: 500; letter-spacing: 0.05em; }
 .kpi-card h3 { font-size: 1.05rem; font-weight: 600; color: var(--offwhite); }
 .kpi-sub { font-size: 0.72rem; color: var(--bege); font-weight: 500; display: flex; justify-content: space-between; margin-top: 0.1rem; }
@@ -214,6 +217,63 @@ textarea { resize: vertical; min-height: 65px; }
 #tabelaFluxoCompilado td { padding: 0.6rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); white-space: nowrap; }
 #tabelaFluxoCompilado tbody tr:last-child td { border-bottom: none; }
 #tabelaFluxoCompilado tbody tr:hover td { background: rgba(228,227,222,0.02); }
+/* ── MINI RELATÓRIO DE FILTRO ── */
+.rel-header {
+  padding: 1.25rem 1.5rem;
+  border-bottom: 1px solid var(--border);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 1rem;
+}
+.rel-header-top { display: flex; align-items: center; gap: 0.6rem; }
+.rel-status-dot { width: 9px; height: 9px; border-radius: 50%; flex-shrink: 0; }
+.rel-title { font-size: 1rem; font-weight: 600; color: var(--offwhite); }
+.rel-count { font-size: 0.72rem; background: var(--surface2); border: 1px solid var(--border2); color: var(--text-muted); padding: 0.15rem 0.55rem; border-radius: 20px; }
+.rel-vgv-total { text-align: right; }
+.rel-vgv-label { font-size: 0.68rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.05em; display: block; margin-bottom: 0.15rem; }
+.rel-vgv-val { font-size: 1.1rem; font-weight: 600; color: var(--bege); }
+
+.rel-body { flex: 1; overflow-y: auto; }
+.rel-table { width: 100%; border-collapse: collapse; font-size: 0.82rem; }
+.rel-table thead th {
+  font-size: 0.65rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-bottom: 1px solid var(--border);
+  background: var(--surface2);
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+.rel-row { cursor: pointer; transition: background 0.15s; }
+.rel-row:hover td { background: rgba(199,178,153,0.04); }
+.rel-row:hover .rel-id .rel-badge { color: var(--bege); }
+.rel-td { padding: 0.75rem 1rem; border-bottom: 1px solid rgba(255,255,255,0.03); vertical-align: top; }
+.rel-table tbody tr:last-child .rel-td { border-bottom: none; }
+
+.rel-id { min-width: 90px; }
+.rel-badge { display: block; font-weight: 600; color: var(--offwhite); margin-bottom: 0.15rem; transition: color 0.15s; }
+.rel-tipo { font-size: 0.68rem; color: var(--text-muted); }
+.rel-cliente { color: var(--text); min-width: 100px; }
+.rel-vgv { text-align: right; font-weight: 500; color: var(--bege); white-space: nowrap; min-width: 110px; }
+.rel-obs { font-size: 0.75rem; color: var(--text-muted); max-width: 160px; line-height: 1.4; }
+
+.rel-footer {
+  padding: 0.65rem 1rem;
+  border-top: 1px solid var(--border);
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-size: 0.72rem;
+  color: var(--text-muted);
+  flex-shrink: 0;
+  background: var(--surface2);
+}
 </style>
 </head>
 <body>
@@ -256,27 +316,27 @@ textarea { resize: vertical; min-height: 65px; }
 
     <!-- KPIs -->
     <div class="kpis-grid">
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard-CV_ASSINADO" onclick="filtrarPorStatus('CV_ASSINADO')" title="Clique para filtrar no espelho">
         <p>VGV CV Assinado</p>
         <h3 id="kpiVgvAssinado">R$ 0</h3>
         <div class="kpi-sub"><span id="countAssinado">0 un</span><span style="color:#4ADE80">●</span></div>
       </div>
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard-PROCESSO" onclick="filtrarPorStatus('PROCESSO')" title="Clique para filtrar no espelho">
         <p>VGV Em Processo</p>
         <h3 id="kpiVgvProcesso">R$ 0</h3>
         <div class="kpi-sub"><span id="countProcesso">0 un</span><span style="color:#3B82F6">●</span></div>
       </div>
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard-RESERVA_VENDA" onclick="filtrarPorStatus('RESERVA_VENDA')" title="Clique para filtrar no espelho">
         <p>VGV Reserva Venda</p>
         <h3 id="kpiVgvReserva">R$ 0</h3>
         <div class="kpi-sub"><span id="countReserva">0 un</span><span style="color:#F59E0B">●</span></div>
       </div>
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard-PROPOSTA" onclick="filtrarPorStatus('PROPOSTA')" title="Clique para filtrar no espelho">
         <p>VGV Em Proposta</p>
         <h3 id="kpiVgvProposta">R$ 0</h3>
         <div class="kpi-sub"><span id="countProposta">0 un</span><span style="color:#86EFAC">●</span></div>
       </div>
-      <div class="kpi-card">
+      <div class="kpi-card" id="kpiCard-DISPONIVEL" onclick="filtrarPorStatus('DISPONIVEL')" title="Clique para filtrar no espelho">
         <p>Estoque Disponível</p>
         <h3 id="kpiDisponivel">0 un</h3>
         <div class="kpi-sub"><span id="countSuspensa" style="color:#888">0 un suspensas</span></div>
@@ -471,20 +531,127 @@ function switchTab(tabName, event) {
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-//  BUSCA NO ESPELHO
+//  BUSCA E FILTRO NO ESPELHO
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+let filtroStatusAtivo = null; // status key ativo pelo KPI
+
+function filtrarPorStatus(statusKey) {
+  if (filtroStatusAtivo === statusKey) {
+    filtroStatusAtivo = null;
+  } else {
+    filtroStatusAtivo = statusKey;
+    document.getElementById('searchInput').value = '';
+    // Se uma unidade estava aberta, fecha — painel vira relatório
+    selectedUnitId = null;
+  }
+
+  document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('kpi-active'));
+  if (filtroStatusAtivo) {
+    const card = document.getElementById('kpiCard-' + filtroStatusAtivo);
+    if (card) card.classList.add('kpi-active');
+  }
+
+  aplicarFiltros();
+  renderRelatorioFiltro();
+}
+
 function filtrarEspelho(q) {
-  const termo = q.trim().toLowerCase();
+  if (q.trim()) {
+    filtroStatusAtivo = null;
+    document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('kpi-active'));
+  }
+  aplicarFiltros();
+  // Limpa relatório se não há filtro de status
+  if (!filtroStatusAtivo) renderRelatorioFiltro();
+}
+
+function aplicarFiltros() {
+  const q        = (document.getElementById('searchInput').value || '').trim().toLowerCase();
+  const stFiltro = filtroStatusAtivo;
+
   document.querySelectorAll('.unit-box').forEach(box => {
-    if (!termo) {
-      box.classList.remove('hidden-search');
-      return;
+    if (box.style.opacity === '0') return;
+    let visivel = true;
+    if (stFiltro) {
+      visivel = (box.dataset.status === stFiltro);
+    } else if (q) {
+      visivel = (box.dataset.id || '').includes(q) || (box.dataset.cliente || '').includes(q);
     }
-    const id   = (box.dataset.id || '').toLowerCase();
-    const nome = (box.dataset.cliente || '').toLowerCase();
-    const hide = !id.includes(termo) && !nome.includes(termo);
-    box.classList.toggle('hidden-search', hide);
+    box.classList.toggle('hidden-search', !visivel);
   });
+}
+
+function renderRelatorioFiltro() {
+  const panel = document.getElementById('painelDireto');
+
+  // Sem filtro ativo → volta ao estado vazio (a menos que uma unidade esteja selecionada)
+  if (!filtroStatusAtivo) {
+    if (!selectedUnitId) {
+      panel.innerHTML = `
+        <div class="painel-vazio">
+          <i class="ti ti-building-store"></i>
+          <p>Selecione uma unidade no espelho<br>para editar status, esteira e fluxo financeiro.</p>
+        </div>`;
+    }
+    return;
+  }
+
+  const cfg = STATUS_CONFIG[filtroStatusAtivo] || {};
+  const unidades = units.filter(u => u.status_espelho === filtroStatusAtivo);
+  const vgvTotal = unidades.reduce((s, u) =>
+    s + u.fluxo_financeiro.reduce((a, f) => a + (parseFloat(f.valor) || 0), 0), 0);
+
+  const linhas = unidades.map(u => {
+    const vgv = u.fluxo_financeiro.reduce((s, f) => s + (parseFloat(f.valor) || 0), 0);
+    const obs  = (u.observacoes || '').trim();
+    return `
+      <tr class="rel-row" onclick="selectUnit('${u.id_unidade}')" title="Abrir unidade ${u.id_unidade}">
+        <td class="rel-td rel-id">
+          <span class="rel-badge">Ap ${u.id_unidade}</span>
+          <span class="rel-tipo">${u.tipo} · ${u.metragem}m²</span>
+        </td>
+        <td class="rel-td rel-cliente">${u.cliente_nome || '<span style="color:var(--text-muted);font-style:italic">S/N</span>'}</td>
+        <td class="rel-td rel-vgv">${vgv > 0 ? fmtBRL(vgv) : '<span style="color:var(--text-muted)">—</span>'}</td>
+        <td class="rel-td rel-obs">${obs ? `<span title="${obs}">${obs.length > 50 ? obs.slice(0,48)+'…' : obs}</span>` : '<span style="color:var(--text-muted)">—</span>'}</td>
+      </tr>`;
+  }).join('');
+
+  const empty = unidades.length === 0
+    ? `<tr><td colspan="4" style="text-align:center;padding:2rem;color:var(--text-muted);font-size:0.85rem;">Nenhuma unidade com este status.</td></tr>`
+    : '';
+
+  panel.innerHTML = `
+    <div class="rel-header">
+      <div class="rel-header-top">
+        <span class="rel-status-dot" style="background:${cfg.color || '#888'}"></span>
+        <span class="rel-title">${cfg.label || filtroStatusAtivo}</span>
+        <span class="rel-count">${unidades.length} unidade${unidades.length !== 1 ? 's' : ''}</span>
+      </div>
+      <div class="rel-vgv-total">
+        <span class="rel-vgv-label">VGV Total</span>
+        <span class="rel-vgv-val">${fmtBRL(vgvTotal)}</span>
+      </div>
+    </div>
+
+    <div class="rel-body">
+      <table class="rel-table">
+        <thead>
+          <tr>
+            <th>Unidade</th>
+            <th>Cliente</th>
+            <th>VGV</th>
+            <th>Obs.</th>
+          </tr>
+        </thead>
+        <tbody>${linhas}${empty}</tbody>
+      </table>
+    </div>
+
+    <div class="rel-footer">
+      <i class="ti ti-info-circle" style="font-size:0.85rem;opacity:0.5"></i>
+      <span>Clique em uma linha para abrir a unidade</span>
+    </div>
+  `;
 }
 
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -529,9 +696,8 @@ function renderEspelho() {
     container.appendChild(row);
   });
 
-  // Reaplicar busca activa
-  const q = document.getElementById('searchInput').value;
-  if (q) filtrarEspelho(q);
+  // Reaplicar filtros activos (status ou texto)
+  aplicarFiltros();
 }
 
 function createUnitDom(u) {
@@ -545,8 +711,9 @@ function createUnitDom(u) {
   const stKey = u.status_espelho.toLowerCase();
   const isSelected = String(u.id_unidade) === String(selectedUnitId);
   box.className = `unit-box u-${stKey}${isSelected ? ' selected' : ''}`;
-  box.dataset.id = String(u.id_unidade).toLowerCase();
+  box.dataset.id     = String(u.id_unidade).toLowerCase();
   box.dataset.cliente = (u.cliente_nome || '').toLowerCase();
+  box.dataset.status  = u.status_espelho;
   box.onclick = () => selectUnit(u.id_unidade);
 
   const fase = u.fase_esteira || 1;
@@ -603,6 +770,11 @@ function renderKPIs() {
 // ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
 function selectUnit(id) {
   selectedUnitId = id;
+  // Ao abrir uma unidade, desativa o filtro de status (KPI) visualmente
+  // mas não limpa o espelho — o usuário pode fechar e voltar ao relatório
+  filtroStatusAtivo = null;
+  document.querySelectorAll('.kpi-card').forEach(c => c.classList.remove('kpi-active'));
+  aplicarFiltros(); // mostra todas as unidades de novo
   renderEspelho();
   renderGaveta(id);
 }
