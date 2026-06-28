@@ -259,6 +259,7 @@ textarea { resize: vertical; min-height: 65px; }
 .rel-id { min-width: 90px; }
 .rel-badge { display: block; font-weight: 600; color: var(--offwhite); margin-bottom: 0.15rem; transition: color 0.15s; }
 .rel-tipo { font-size: 0.68rem; color: var(--text-muted); }
+.rel-substatus { display: block; font-size: 0.65rem; font-weight: 600; margin-top: 0.2rem; }
 .rel-cliente { color: var(--text); min-width: 100px; }
 .rel-vgv { text-align: right; font-weight: 500; color: var(--bege); white-space: nowrap; min-width: 110px; }
 .rel-obs { font-size: 0.75rem; color: var(--text-muted); max-width: 160px; line-height: 1.4; }
@@ -423,6 +424,18 @@ const STATUS_CONFIG = {
   SUSPENSA:         { label: "Suspensa",           color: "#555" }
 };
 
+// Agrupamentos de status: o card "Em Processo" soma PROCESSO + CONTRATO_ENVIADO
+// no VGV (ver renderKPIs). O filtro do espelho e o relatório usam o mesmo critério,
+// senão as unidades com contrato enviado aparecem no card mas somem do relatório.
+const GRUPOS_STATUS = {
+  PROCESSO: ["PROCESSO", "CONTRATO_ENVIADO"]
+};
+
+function statusNoGrupo(status, grupoKey) {
+  const grupo = GRUPOS_STATUS[grupoKey];
+  return grupo ? grupo.includes(status) : status === grupoKey;
+}
+
 const FASES = [
   "Proposta em Análise",
   "Aprovada Comercial / Diretoria",
@@ -573,7 +586,7 @@ function aplicarFiltros() {
     if (box.style.opacity === '0') return;
     let visivel = true;
     if (stFiltro) {
-      visivel = (box.dataset.status === stFiltro);
+      visivel = statusNoGrupo(box.dataset.status, stFiltro);
     } else if (q) {
       visivel = (box.dataset.id || '').includes(q) || (box.dataset.cliente || '').includes(q);
     }
@@ -597,18 +610,25 @@ function renderRelatorioFiltro() {
   }
 
   const cfg = STATUS_CONFIG[filtroStatusAtivo] || {};
-  const unidades = units.filter(u => u.status_espelho === filtroStatusAtivo);
+  const unidades = units.filter(u => statusNoGrupo(u.status_espelho, filtroStatusAtivo));
   const vgvTotal = unidades.reduce((s, u) =>
     s + u.fluxo_financeiro.reduce((a, f) => a + (parseFloat(f.valor) || 0), 0), 0);
 
   const linhas = unidades.map(u => {
     const vgv = u.fluxo_financeiro.reduce((s, f) => s + (parseFloat(f.valor) || 0), 0);
     const obs  = (u.observacoes || '').trim();
+    // Quando o status real difere da chave do filtro (ex: CONTRATO_ENVIADO dentro do grupo PROCESSO),
+    // mostra um selo indicando o status efetivo da unidade.
+    const subStatusCfg = STATUS_CONFIG[u.status_espelho] || {};
+    const subStatus = u.status_espelho !== filtroStatusAtivo
+      ? `<span class="rel-substatus" style="color:${subStatusCfg.color || '#888'}">${subStatusCfg.label || u.status_espelho}</span>`
+      : '';
     return `
       <tr class="rel-row" onclick="selectUnit('${u.id_unidade}')" title="Abrir unidade ${u.id_unidade}">
         <td class="rel-td rel-id">
           <span class="rel-badge">Ap ${u.id_unidade}</span>
           <span class="rel-tipo">${u.tipo} · ${u.metragem}m²</span>
+          ${subStatus}
         </td>
         <td class="rel-td rel-cliente">${u.cliente_nome || '<span style="color:var(--text-muted);font-style:italic">S/N</span>'}</td>
         <td class="rel-td rel-vgv">${vgv > 0 ? fmtBRL(vgv) : '<span style="color:var(--text-muted)">—</span>'}</td>
