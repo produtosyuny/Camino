@@ -9,14 +9,15 @@
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
     <style>
         :root {
-            --bg-primary: #121212;
-            --bg-surface: #1a1a1a;
-            --bg-card: #222222;
-            --text-main: #e6e1da;
-            --text-muted: #9e9a93;
-            --accent-gold: #c5a880;
-            --accent-gold-dark: #8c734f;
-            --border-subtle: #2d2a26;
+            /* Nova Paleta: Fundo Areia Quente, Textos Sofisticados e Rosa Queimado / Dourado Suave */
+            --bg-primary: #f5f2eb;
+            --bg-surface: #eae5dc;
+            --bg-card: #dfd8cc;
+            --text-main: #2c2926;
+            --text-muted: #6e6963;
+            --accent-rose: #a36b6b;
+            --accent-rose-dark: #7a4e4e;
+            --border-subtle: #d4cec3;
             --transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
         }
 
@@ -31,7 +32,7 @@
             color: var(--text-main);
             font-family: 'Plus Jakarta Sans', sans-serif;
             font-weight: 300;
-            line-height: 1.7;
+            line-height: 1.8;
             font-size: 16px;
             letter-spacing: -0.01em;
         }
@@ -42,52 +43,48 @@
             color: var(--text-main);
         }
 
-        /* Container Principal */
         .container {
             max-width: 900px;
             margin: 0 auto;
             padding: 80px 24px;
         }
 
-        /* Capa / Header Editorial */
+        /* Capa Editorial */
         header.editorial-cover {
             text-align: center;
-            padding: 120px 0 80px;
+            padding: 100px 0 60px;
             border-bottom: 1px solid var(--border-subtle);
-            margin-bottom: 80px;
+            margin-bottom: 60px;
         }
 
         header.editorial-cover h1 {
-            font-size: 3.5rem;
-            letter-spacing: 0.05em;
-            margin-bottom: 16px;
-            color: var(--accent-gold);
+            font-size: 3.8rem;
+            letter-spacing: 0.04em;
+            margin-bottom: 12px;
+            color: var(--accent-rose-dark);
         }
 
         header.editorial-cover p.subtitle {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             color: var(--text-muted);
             font-style: italic;
             font-family: 'Cormorant Garamond', serif;
-            letter-spacing: 0.03em;
         }
 
-        /* Slot de Foto Editorial (Preparado para imagens futuras) */
+        /* Slots de Fotos */
         .photo-slot {
             width: 100%;
-            height: 420px;
+            height: 380px;
             background-color: var(--bg-surface);
             border: 1px dashed var(--border-subtle);
             display: flex;
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            margin: 48px 0;
+            margin: 40px 0;
             color: var(--text-muted);
             text-align: center;
             padding: 24px;
-            position: relative;
-            overflow: hidden;
             border-radius: 4px;
         }
 
@@ -95,7 +92,6 @@
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             font-size: 1.1rem;
-            letter-spacing: 0.05em;
         }
 
         .photo-slot small {
@@ -103,116 +99,112 @@
             text-transform: uppercase;
             letter-spacing: 0.15em;
             margin-top: 8px;
-            color: var(--accent-gold-dark);
+            color: var(--accent-rose);
         }
 
         /* Seções e Módulos */
         section.module {
-            margin-bottom: 96px;
+            margin-bottom: 80px;
         }
 
         section.module h2 {
-            font-size: 2.2rem;
-            margin-bottom: 32px;
-            padding-bottom: 16px;
+            font-size: 2.4rem;
+            margin-bottom: 28px;
+            padding-bottom: 12px;
             border-bottom: 1px solid var(--border-subtle);
-            color: var(--accent-gold);
+            color: var(--accent-rose-dark);
         }
 
         h3 {
-            font-size: 1.6rem;
-            margin: 40px 0 16px;
+            font-size: 1.7rem;
+            margin: 36px 0 16px;
         }
 
         p {
-            margin-bottom: 24px;
-            color: var(--text-main);
+            margin-bottom: 20px;
         }
 
-        /* Listas e Elementos */
         ul {
             list-style: none;
-            margin-bottom: 24px;
+            margin-bottom: 20px;
         }
 
         ul li {
             position: relative;
             padding-left: 20px;
-            margin-bottom: 12px;
-            color: var(--text-main);
+            margin-bottom: 10px;
         }
 
         ul li::before {
             content: "—";
             position: absolute;
             left: 0;
-            color: var(--accent-gold);
+            color: var(--accent-rose);
         }
 
-        /* Cartões de Receitas (Minimalista Editorial) */
+        /* Cartões de Receitas */
         .recipe-card {
             background-color: var(--bg-surface);
             border: 1px solid var(--border-subtle);
-            padding: 40px;
-            margin-bottom: 40px;
+            padding: 36px;
+            margin-bottom: 32px;
             border-radius: 4px;
             transition: var(--transition);
         }
 
         .recipe-card:hover {
-            border-color: var(--accent-gold-dark);
+            border-color: var(--accent-rose);
         }
 
         .recipe-card h4 {
-            font-size: 1.8rem;
-            margin-bottom: 8px;
-            color: var(--text-main);
+            font-size: 1.7rem;
+            margin-bottom: 6px;
         }
 
         .recipe-meta {
             font-size: 0.85rem;
             text-transform: uppercase;
             letter-spacing: 0.1em;
-            color: var(--accent-gold);
-            margin-bottom: 24px;
+            color: var(--accent-rose);
+            margin-bottom: 20px;
+            font-weight: 500;
         }
 
         .intention-box {
             background-color: var(--bg-card);
-            border-left: 2px solid var(--accent-gold);
-            padding: 20px 24px;
-            margin: 24px 0;
+            border-left: 2px solid var(--accent-rose);
+            padding: 18px 22px;
+            margin: 20px 0;
             font-family: 'Cormorant Garamond', serif;
             font-style: italic;
             font-size: 1.2rem;
-            color: var(--text-main);
+            color: var(--accent-rose-dark);
         }
 
-        /* Links de Ervas (Cruzados) */
         .herb-link {
-            color: var(--accent-gold);
+            color: var(--accent-rose-dark);
             text-decoration: none;
-            border-bottom: 1px dotted var(--accent-gold);
-            transition: var(--transition);
+            border-bottom: 1px dotted var(--accent-rose);
+            font-weight: 500;
             cursor: pointer;
         }
 
         .herb-link:hover {
-            color: #fff;
-            border-bottom-color: #fff;
+            color: var(--text-main);
+            border-bottom-color: var(--text-main);
         }
 
-        /* Rodapé Editorial */
         footer {
             text-align: center;
-            padding: 60px 0;
+            padding: 50px 0;
             border-top: 1px solid var(--border-subtle);
             color: var(--text-muted);
             font-size: 0.9rem;
         }
 
         footer span {
-            color: var(--accent-gold);
+            color: var(--accent-rose-dark);
+            font-weight: 500;
         }
     </style>
 </head>
@@ -220,89 +212,66 @@
 
     <div class="container">
         
-        <!-- Capa Editorial -->
         <header class="editorial-cover">
             <h1>Banhos de Ervas</h1>
             <p class="subtitle">Um guia introdutório para sua prática pessoal</p>
-            
-            <!-- Placeholder para foto de abertura / retrato ou atmosfera -->
-            <div class="photo-slot" style="height: 300px;">
-                <span>[ Espaço reservado para fotografia de atmosfera: Ervas frescas ou altar minimalista ]</span>
-                <small>Slot de Imagem 01</small>
+            <div class="photo-slot" style="height: 260px;">
+                <span>[ Foto de Capa: Atmosfera Areia e Ervas Selecionadas ]</span>
+                <small>Slot Visual 01</small>
             </div>
         </header>
 
-        <!-- Módulo 1 -->
-        <section class="module" id="modulo-1">
-            <h2>Módulo 1 — Fundamentos</h2>
-            
-            <p>O banho de ervas é um ritual milenar de autocuidado e redirecionamento energético. Ele utiliza a frequência e as propriedades das plantas para atuar no campo sutil e físico, ajudando a liberar o que está estagnado e a atrair novas vibrações.</p>
-            
-            <h3>A Regra de Ouro</h3>
-            <p>Nunca se escolhe a erva por escolher. Primeiro define-se a finalidade para depois buscar os ingredientes que conversam com essa necessidade. A planta é o veículo; a sua intenção é o motor.</p>
-            
-            <ul>
-                <li>Observe o que você está vivendo no momento presente.</li>
-                <li>Escolha uma finalidade clara e específica.</li>
-                <li>Selecione a erva principal e os complementos.</li>
-            </ul>
+        <!-- Aviso Editorial Inicial -->
+        <section class="module">
+            <p><em>Este material foi escrito para uso pessoal. As associações espirituais, combinações, quantidades, preparos e intenções devem ser validados pela Maria antes da publicação[cite: 2].</em></p>
+            <h3>Como usar este guia</h3>
+            <p>Este guia foi criado para quem deseja iniciar ou aprofundar sua prática pessoal com banhos de ervas[cite: 2]. O objetivo não é ensinar uma receita automática para resolver qualquer situação, mas ajudar você a compreender a finalidade de cada banho, o papel de cada erva e a importância de uma intenção clara[cite: 2].</p>
+        </section>
 
-            <!-- Placeholder para foto didática -->
+        <!-- Módulo 1 -->
+        <section class="module">
+            <h2>Módulo 1 — Fundamentos dos Banhos de Ervas</h2>
+            <p><strong>O que são os banhos de ervas?</strong> São preparações feitas com plantas escolhidas de acordo com uma finalidade[cite: 2]. A escolha não deve ser aleatória: cada erva precisa ter uma razão para estar naquele banho[cite: 2].</p>
+            <p><strong>A finalidade vem antes da erva:</strong> Siga a ordem correta — observe o que está vivendo, escolha uma finalidade, selecione a erva principal e os complementos, entendendo o motivo de cada ingrediente antes do preparo[cite: 2].</p>
+            
             <div class="photo-slot">
-                <span>[ Espaço reservado para foto de detalhe: Manuseio consciente de folhas secas ]</span>
-                <small>Slot de Imagem 02</small>
+                <span>[ Foto de Detalhe: Preparo e Manuseio Consciente ]</span>
+                <small>Slot Visual 02</small>
             </div>
         </section>
 
-        <!-- Módulo de Demonstração de Banhos (Exemplos) -->
-        <section class="module" id="modulo-banhos">
-            <h2>Banhos Práticos (Exemplos de Estrutura)</h2>
+        <!-- Seção de Demonstração Completa dos Banhos (Exu, Pombagira e Gerais) -->
+        <section class="module">
+            <h2>Os Banhos Práticos (Exemplos do Guia)</h2>
 
-            <!-- Exemplo Receita 1 -->
+            <!-- Exemplo Exu -->
             <div class="recipe-card">
                 <h4>Banho de Exu para Movimento</h4>
-                <div class="recipe-meta">Direcionamento: Exu • Categoria: Abertura</div>
-                
-                <p><strong>Finalidade:</strong> Estimular disposição para sair da estagnação e agir com consciência.</p>
-                
-                <p><strong>Ervas utilizadas:</strong> 
-                    <span class="herb-link" title="Ver todas as receitas com Alecrim">Alecrim</span>, 
-                    <span class="herb-link" title="Ver todas as receitas com Manjericão">Manjericão</span> e 
-                    <span class="herb-link" title="Ver todas as receitas com Louro">Louro</span>.
-                </p>
-
-                <p><strong>Por que cada erva foi escolhida:</strong> O <span class="herb-link">alecrim</span> representa disposição e clareza; o <span class="herb-link">manjericão</span> acrescenta renovação e equilíbrio; o <span class="herb-link">louro</span> reforça a realização.</p>
-
+                <div class="recipe-meta">Direcionamento: Exu • Categoria: Movimento</div>
+                <p><strong>Finalidade:</strong> Estimular disposição para sair da estagnação e agir[cite: 2].</p>
+                <p><strong>Ervas:</strong> <span class="herb-link">Alecrim</span>, <span class="herb-link">Manjericão</span> e <span class="herb-link">Louro</span>[cite: 2].</p>
+                <p><strong>Por que cada erva foi escolhida:</strong> O <span class="herb-link">alecrim</span> representa disposição e clareza; o <span class="herb-link">manjericão</span> acrescenta renovação e equilíbrio; o <span class="herb-link">louro</span> reforça a ideia de realização e movimento[cite: 2].</p>
                 <div class="intention-box">
-                    "Que eu reconheça o que está parado e tenha coragem para movimentar o que depende de mim."
+                    "Que eu reconheça o que está parado e tenha coragem para movimentar o que depende de mim."[cite: 2]
                 </div>
-
-                <p><strong>Modo de Preparo:</strong> Preparo-base para folhas e flores (infusão em água aquecida, abafada por 10 minutos).</p>
             </div>
 
-            <!-- Exemplo Receita 2 -->
+            <!-- Exemplo Pombagira -->
             <div class="recipe-card">
                 <h4>Banho de Pombagira para Autoestima</h4>
                 <div class="recipe-meta">Direcionamento: Pombagira • Categoria: Autoamor</div>
-                
-                <p><strong>Finalidade:</strong> Fortalecer o amor-próprio e a valorização pessoal após ciclos de desgaste.</p>
-                
-                <p><strong>Ervas utilizadas:</strong> 
-                    <span class="herb-link">Pétalas de Rosa</span>, 
-                    <span class="herb-link">Alecrim</span> e 
-                    <span class="herb-link">Manjericão</span>.
-                </p>
-
+                <p><strong>Finalidade:</strong> Fortalecer amor-próprio e valorização pessoal[cite: 2].</p>
+                <p><strong>Ervas e elementos:</strong> <span class="herb-link">Pétalas de rosa</span>, <span class="herb-link">Alecrim</span> e <span class="herb-link">Manjericão</span>[cite: 2].</p>
+                <p><strong>Por que cada ingrediente foi escolhido:</strong> A rosa representa beleza e amor-próprio; o alecrim reforça vitalidade; o manjericão acrescenta renovação e equilíbrio[cite: 2].</p>
                 <div class="intention-box">
-                    "Que eu reconheça meu valor e não aceite menos do que mereço."
+                    "Que eu reconheça meu valor e não aceite menos do que mereço."[cite: 2]
                 </div>
             </div>
 
         </section>
 
-        <!-- Rodapé -->
         <footer>
-            <p>Conteúdo validado por <span>Mundo Cigana Tarot</span>. Uso estritamente pessoal e reflexivo.</p>
+            <p>Conteúdo revisado e validado por <span>Mundo Cigana Tarot</span>[cite: 2]. Uso exclusivo para prática pessoal.</p>
         </footer>
 
     </div>
