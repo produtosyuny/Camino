@@ -7,7 +7,177 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&family=Plus+Jakarta+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <style>
+        :root {
+            --bg-primary: #f7f4ee;
+            --bg-sidebar: #efede6;
+            --bg-surface: #ffffff;
+            --bg-card: #f2eee3;
+            --text-main: #2c2926;
+            --text-muted: #757068;
+            --accent-rose: #9e6363;
+            --accent-rose-dark: #6e4141;
+            --border-subtle: #e3decb;
+            --transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background-color: var(--bg-primary);
+            color: var(--text-main);
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            font-weight: 300;
+            line-height: 1.7;
+            font-size: 15px;
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Cormorant Garamond', serif;
+            font-weight: 400;
+            color: var(--text-main);
+        }
+
+        aside.sidebar {
+            width: 320px;
+            background-color: var(--bg-sidebar);
+            border-right: 1px solid var(--border-subtle);
+            display: flex;
+            flex-direction: column;
+            height: 100%;
+            z-index: 100;
+            transition: var(--transition);
+        }
+
+        .sidebar-header {
+            padding: 28px 24px;
+            border-bottom: 1px solid var(--border-subtle);
+            text-align: center;
+        }
+
+        .sidebar-header h2 { font-size: 1.5rem; color: var(--accent-rose-dark); }
+        .sidebar-header p { font-size: 0.8rem; color: var(--text-muted); font-style: italic; font-family: 'Cormorant Garamond', serif; }
+
+        .nav-tree { flex: 1; overflow-y: auto; padding: 20px 16px; }
+        .nav-section { margin-bottom: 14px; }
+        .nav-section-title {
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent-rose);
+            padding: 8px 12px;
+            font-weight: 550;
+        }
+
+        .nav-items { list-style: none; padding-left: 8px; }
+        .nav-items li a {
+            display: block;
+            padding: 6px 12px;
+            color: var(--text-main);
+            text-decoration: none;
+            font-size: 0.9rem;
+            border-radius: 4px;
+            transition: var(--transition);
+        }
+
+        .nav-items li a:hover, .nav-items li a.active {
+            background-color: var(--border-subtle);
+            color: var(--accent-rose-dark);
+            font-weight: 400;
+        }
+
+        main.content-area { flex: 1; height: 100%; overflow-y: auto; padding: 50px 70px; }
+        .content-container { max-width: 800px; margin: 0 auto; }
+
+        h1.page-title {
+            font-size: 2.6rem;
+            color: var(--accent-rose-dark);
+            margin-bottom: 20px;
+            border-bottom: 1px solid var(--border-subtle);
+            padding-bottom: 14px;
+        }
+
+        h3 { font-size: 1.5rem; margin: 28px 0 12px; color: var(--accent-rose-dark); }
+        p { margin-bottom: 16px; }
+        ul { list-style: none; margin-bottom: 20px; }
+        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
+        ul li::before { content: "—"; position: absolute; left: 0; color: var(--accent-rose); }
+
+        .recipe-card {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            padding: 32px;
+            margin-bottom: 24px;
+            border-radius: 6px;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+        }
+
+        .recipe-card h4 { font-size: 1.5rem; margin-bottom: 4px; }
+        .recipe-meta {
+            font-size: 0.8rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--accent-rose);
+            margin-bottom: 16px;
+            font-weight: 500;
+        }
+
+        .intention-box {
+            background-color: var(--bg-card);
+            border-left: 2px solid var(--accent-rose);
+            padding: 16px 20px;
+            margin: 16px 0;
+            font-family: 'Cormorant Garamond', serif;
+            font-style: italic;
+            font-size: 1.15rem;
+            color: var(--accent-rose-dark);
+        }
+
+        .herb-tag {
+            background-color: var(--bg-card);
+            border: 1px solid var(--border-subtle);
+            padding: 2px 8px;
+            border-radius: 4px;
+            color: var(--accent-rose-dark);
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: var(--transition);
+            display: inline-block;
+            margin: 2px;
+        }
+
+        .herb-tag:hover {
+            background-color: var(--accent-rose);
+            color: #fff;
+            border-color: var(--accent-rose);
+        }
+
+        .mobile-menu-btn {
+            display: none;
+            position: fixed;
+            top: 15px;
+            left: 15px;
+            z-index: 200;
+            background: var(--accent-rose-dark);
+            color: #fff;
+            border: none;
+            padding: 8px 14px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+        }
+
+        @media (max-width: 768px) {
+            body { flex-direction: column; height: 100vh; overflow: auto; }
+            aside.sidebar { position: fixed; left: -100%; width: 280px; height: 100%; }
+            aside.sidebar.open { left: 0; }
+            main.content-area { padding: 80px 20px 40px; height: 100%; }
+            .mobile-menu-btn { display: block; }
+        }
+    </style>
 </head>
 <body>
 
@@ -18,17 +188,165 @@
             <h2>Banhos de Ervas</h2>
             <p>Mundo Cigana Tarot</p>
         </div>
-        <nav class="nav-tree" id="navTree">
-            <!-- Injetado via JS -->
-        </nav>
+        <nav class="nav-tree" id="navTree"></nav>
     </aside>
 
     <main class="content-area">
-        <div class="content-container" id="contentContainer">
-            <!-- Conteúdo dinâmico -->
-        </div>
+        <div class="content-container" id="contentContainer"></div>
     </main>
 
-    <script src="app.js"></script>
+    <script>
+        let appData = {};
+
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('data/content.json')
+                .then(response => response.json())
+                .then(data => {
+                    appData = data;
+                    buildSidebar();
+                    loadView('inicio');
+                })
+                .catch(error => console.error('Erro ao carregar os dados:', error));
+        });
+
+        function buildSidebar() {
+            const navTree = document.getElementById('navTree');
+            navTree.innerHTML = `
+                <div class="nav-section">
+                    <div class="nav-section-title">Apresentação</div>
+                    <ul class="nav-items">
+                        <li><a href="#" onclick="loadView('inicio'); closeMobileMenu();" id="link-inicio" class="active">Visão Geral</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">Módulos Teóricos</div>
+                    <ul class="nav-items">
+                        <li><a href="#" onclick="loadView('mod1'); closeMobileMenu();" id="link-mod1">Módulo 1: Fundamentos</a></li>
+                        <li><a href="#" onclick="loadView('mod2'); closeMobileMenu();" id="link-mod2">Módulo 2: Tipos de Ervas</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">Direcionamentos</div>
+                    <ul class="nav-items">
+                        <li><a href="#" onclick="loadCategory('Exu'); closeMobileMenu();">Banhos de Exu</a></li>
+                        <li><a href="#" onclick="loadCategory('Pombagira'); closeMobileMenu();">Banhos de Pombagira</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">Banhos por Finalidade</div>
+                    <ul class="nav-items">
+                        <li><a href="#" onclick="loadCategory('Limpeza Energética'); closeMobileMenu();">A. Limpeza Energética</a></li>
+                        <li><a href="#" onclick="loadCategory('Amor e Magnetismo'); closeMobileMenu();">B. Amor e Magnetismo</a></li>
+                        <li><a href="#" onclick="loadCategory('Trabalho e Caminhos'); closeMobileMenu();">C. Trabalho e Caminhos</a></li>
+                        <li><a href="#" onclick="loadCategory('Prosperidade'); closeMobileMenu();">D. Prosperidade</a></li>
+                        <li><a href="#" onclick="loadCategory('Autoestima e Poder'); closeMobileMenu();">E. Autoestima e Poder</a></li>
+                        <li><a href="#" onclick="loadCategory('Proteção'); closeMobileMenu();">F. Proteção</a></li>
+                    </ul>
+                </div>
+                <div class="nav-section">
+                    <div class="nav-section-title">Consulta Cruzada</div>
+                    <ul class="nav-items">
+                        <li><a href="#" onclick="loadView('fichas'); closeMobileMenu();" id="link-fichas">Vade-Mécum (Fichas)</a></li>
+                        <li><a href="#" onclick="loadView('seguranca'); closeMobileMenu();" id="link-seguranca">Segurança e Uso</a></li>
+                    </ul>
+                </div>
+            `;
+        }
+
+        function loadView(viewKey) {
+            setActiveLink('link-' + viewKey);
+            const container = document.getElementById('contentContainer');
+            
+            if (viewKey === 'inicio') {
+                container.innerHTML = `
+                    <h1 class="page-title">${appData.titulo}</h1>
+                    <p><em>${appData.subtitulo}</em></p>
+                    <h3>Como usar este guia</h3>
+                    <p>${appData.como_usar}</p>
+                `;
+            } else if (viewKey === 'mod1') {
+                container.innerHTML = `<h1 class="page-title">Módulo 1 — Fundamentos</h1><p>${appData.modulos.mod1}</p>`;
+            } else if (viewKey === 'mod2') {
+                container.innerHTML = `<h1 class="page-title">Módulo 2 — Tipos de Ervas</h1><p>${appData.modulos.mod2}</p>`;
+            } else if (viewKey === 'fichas') {
+                container.innerHTML = `
+                    <h1 class="page-title">Vade-Mécum das Ervas</h1>
+                    <p>Clique em uma erva abaixo para cruzar dados:</p>
+                    <p>
+                        <span class="herb-tag" onclick="filterByHerb('Alecrim')">Alecrim</span>
+                        <span class="herb-tag" onclick="filterByHerb('Manjericão')">Manjericão</span>
+                        <span class="herb-tag" onclick="filterByHerb('Louro')">Louro</span>
+                        <span class="herb-tag" onclick="filterByHerb('Hortelã')">Hortelã</span>
+                        <span class="herb-tag" onclick="filterByHerb('Rosa')">Rosa</span>
+                        <span class="herb-tag" onclick="filterByHerb('Lavanda')">Lavanda</span>
+                        <span class="herb-tag" onclick="filterByHerb('Camomila')">Camomila</span>
+                        <span class="herb-tag" onclick="filterByHerb('Canela')">Canela</span>
+                    </p>
+                `;
+            } else if (viewKey === 'seguranca') {
+                container.innerHTML = `<h1 class="page-title">Segurança e Uso Responsável</h1><p>${appData.seguranca}</p>`;
+            }
+        }
+
+        function loadCategory(categoryName) {
+            const container = document.getElementById('contentContainer');
+            const filteredBanhos = appData.banhos.filter(b => b.categoria === categoryName || b.direcionamento === categoryName);
+
+            let html = `<h1 class="page-title">${categoryName}</h1>`;
+            filteredBanhos.forEach(b => {
+                let ervasHtml = b.ervas.map(e => `<span class="herb-tag" onclick="filterByHerb('${e}')">${e}</span>`).join(', ');
+                html += `
+                    <div class="recipe-card">
+                        <h4>${b.id}. ${b.titulo}</h4>
+                        <div class="recipe-meta">Direcionamento: ${b.direcionamento || 'Geral'} • Foco: ${b.categoria}</div>
+                        <p><strong>Finalidade:</strong> ${b.finalidade}</p>
+                        <p><strong>Ervas:</strong> ${ervasHtml}</p>
+                        <p><strong>Por que foi escolhida:</strong> ${b.explicacao}</p>
+                        <div class="intention-box">"${b.intencao}"</div>
+                        <p><strong>Preparo:</strong> ${b.preparo}</p>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function filterByHerb(herbName) {
+            const container = document.getElementById('contentContainer');
+            const filteredBanhos = appData.banhos.filter(b => b.ervas.includes(herbName));
+
+            let html = `<h1 class="page-title">Erva: ${herbName}</h1>`;
+            html += `<p>Exibindo todos os banhos deste guia que utilizam <strong>${herbName}</strong>:</p>`;
+
+            filteredBanhos.forEach(b => {
+                let ervasHtml = b.ervas.map(e => `<span class="herb-tag" onclick="filterByHerb('${e}')">${e}</span>`).join(', ');
+                html += `
+                    <div class="recipe-card">
+                        <h4>${b.id}. ${b.titulo}</h4>
+                        <div class="recipe-meta">Categoria: ${b.categoria}</div>
+                        <p><strong>Finalidade:</strong> ${b.finalidade}</p>
+                        <p><strong>Ervas da receita:</strong> ${ervasHtml}</p>
+                        <div class="intention-box">"${b.intencao}"</div>
+                    </div>
+                `;
+            });
+            container.innerHTML = html;
+        }
+
+        function setActiveLink(linkId) {
+            document.querySelectorAll('.nav-items a').forEach(el => el.classList.remove('active'));
+            const target = document.getElementById(linkId);
+            if(target) target.classList.add('active');
+        }
+
+        function toggleMobileMenu() {
+            document.getElementById('sidebar').classList.toggle('open');
+        }
+
+        function closeMobileMenu() {
+            if(window.innerWidth <= 768) {
+                document.getElementById('sidebar').classList.remove('open');
+            }
+        }
+    </script>
 </body>
 </html>
