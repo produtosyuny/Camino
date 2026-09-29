@@ -524,6 +524,17 @@
       "explicacao": "O alecrim fortalece; o manjericão harmoniza; a lavanda suaviza[cite: 2].",
       "intencao": "Que meu espaço e minha presença sejam conduzidos por equilíbrio e respeito[cite: 2].",
       "preparo": "Para uso pessoal, use o preparo-base[cite: 2]."
+      },
+    {
+      "id": 70,
+      "titulo": "TESTE",
+      "direcionamento": "Geral",
+      "categoria": "Proteção",
+      "finalidade": "Esse eh um teste de inclusao",
+      "ervas": ["Alecrim", "Manjericão", "Lavanda"],
+      "explicacao": "Oteste de edicao",
+      "intencao": "Que esse teste de certo.",
+      "preparo": "faz como quiser sei la]."
     },
     {
       "id": 48,
