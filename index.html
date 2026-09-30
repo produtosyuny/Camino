@@ -136,12 +136,18 @@
         .herb-tag {
             background-color: var(--bg-card);
             border: 1px solid var(--border-subtle);
-            padding: 2px 8px;
+            padding: 4px 10px;
             border-radius: 4px;
             color: var(--accent-rose-dark);
             font-size: 0.85rem;
             display: inline-block;
-            margin: 2px;
+            margin: 3px;
+            cursor: pointer;
+            transition: var(--transition);
+        }
+        .herb-tag:hover {
+            background-color: var(--border-subtle);
+            border-color: var(--accent-rose);
         }
 
         /* ESTILOS DA SANFONA (FICHAS EXPANSÍVEIS) */
@@ -290,17 +296,15 @@
             `;
         }
 
-        // Função para transformar texto de ervas em links mágicos
+        // Função para transformar texto de substituição em links mágicos
         function linkifySubstitutos(texto) {
             if(!texto) return "";
             let textLinked = texto;
             const fichas = appData.fichas_ervas || [];
             
-            // Ordenar por tamanho da palavra para evitar que "Rosa" quebre "Rosa Branca"
             const sortedFichas = [...fichas].sort((a,b) => b.nome.length - a.nome.length);
             
             sortedFichas.forEach(f => {
-                // Regex para encontrar a erva (ignorando maiusculas/minusculas)
                 const regex = new RegExp("(" + f.nome + ")", "gi");
                 textLinked = textLinked.replace(regex, `<a class="smart-link" onclick="abrirFicha('${f.nome}')">$1</a>`);
             });
@@ -316,10 +320,6 @@
                 body.classList.remove('active');
                 headerSign.innerText = "+";
             } else {
-                // Se quiser que abra apenas uma por vez, descomente a linha abaixo:
-                // document.querySelectorAll('.accordion-body').forEach(el => el.classList.remove('active'));
-                // document.querySelectorAll('.icon-sign').forEach(el => el.innerText = "+");
-                
                 body.classList.add('active');
                 headerSign.innerText = "—";
             }
@@ -328,7 +328,8 @@
         // Abre uma erva específica vindo de um link
         function abrirFicha(nomeErva) {
             loadView('fichas');
-            const safeId = nomeErva.replace(/\\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+            // Remove acentos e padroniza para achar o ID exato
+            const safeId = nomeErva.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
             const targetBody = document.getElementById('ficha-body-' + safeId);
             const targetHeader = document.getElementById('icon-' + safeId);
             
@@ -336,7 +337,6 @@
                 targetBody.classList.add('active');
                 targetHeader.innerText = "—";
                 
-                // Rolar até ela
                 setTimeout(() => {
                     targetBody.previousElementSibling.scrollIntoView({behavior: 'smooth', block: 'center'});
                 }, 100);
@@ -350,7 +350,6 @@
                 const cardBanho = document.getElementById('banho-' + idBanho);
                 if(cardBanho) {
                     cardBanho.scrollIntoView({behavior: 'smooth', block: 'center'});
-                    // Pisca a borda para destacar
                     cardBanho.style.border = "2px solid var(--accent-rose)";
                     setTimeout(() => cardBanho.style.border = "1px solid var(--border-subtle)", 2000);
                 }
@@ -392,7 +391,7 @@
                     `).join('');
 
                     let subtitutosComLinks = linkifySubstitutos(f.substituicao);
-                    let safeId = f.nome.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+                    let safeId = f.nome.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
 
                     html += `
                         <div class="accordion-header" onclick="toggleAccordion('${safeId}')">
@@ -441,13 +440,15 @@
             }
 
             filteredBanhos.forEach(b => {
-                let ervasHtml = b.ervas.map(e => `<span class="herb-tag">${e}</span>`).join(' ');
+                // Transforma cada ingrediente da lista num botão clicável para sua ficha
+                let ervasHtml = b.ervas.map(e => `<span class="herb-tag" onclick="abrirFicha('${e}')" title="Ver ficha de ${e}">${e}</span>`).join(' ');
+                
                 html += `
                     <div class="recipe-card" id="banho-${b.id}">
                         <h4>${b.titulo}</h4>
                         <div class="recipe-meta">Direcionamento: ${b.direcionamento} • Categoria: ${b.categoria}</div>
                         <p><strong>Finalidade:</strong> ${b.finalidade}</p>
-                        <p><strong>Ervas da Fórmula:</strong><br>${ervasHtml}</p>
+                        <p><strong>Ingredientes:</strong><br>${ervasHtml}</p>
                         <p><strong>Por que funciona:</strong> ${b.explicacao}</p>
                         <div class="intention-box">Intenção: "${b.intencao}"</div>
                         <p><strong>Modo de Preparo:</strong> ${b.preparo}</p>
