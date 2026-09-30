@@ -7,6 +7,144 @@
     "mod2": "A classificação de ervas quentes, mornas e frias orienta a densidade do trabalho. O repertório abrange desde elementos de defesa profunda até flores de apaziguamento e sutileza espiritual."
   },
   "seguranca": "Os banhos deste material são de uso estritamente externo. Não ingira as preparações. Evite contato com olhos, boca, mucosas, feridas e pele lesionada. Em caso de reação alérgica, interrompa o uso imediatamente.",
+  "fichas_ervas": [
+    {
+      "nome": "Alecrim",
+      "tipo": "Erva (Folhes)",
+      "energia": "Vitalidade, foco, coragem e limpeza mental",
+      "classificacao": "Morna/Quente (Ativadora)",
+      "utilizacao": "Indispensável para quebrar inércia, trazer ânimo pela manhã, estimular a clareza de raciocínio e dar firmeza em propósitos de trabalho e atitude.",
+      "substituicao": "Hortelã (para o frescor e clareza mental) ou Casca de Laranja seca (para o ânimo e movimento)."
+    },
+    {
+      "nome": "Aroeira",
+      "tipo": "Erva (Folhas)",
+      "energia": "Defesa pesada, quebra de demandas e corte de energias densas",
+      "classificacao": "Quente (Forte Descarrego)",
+      "utilizacao": "Usada em banhos de limpeza profunda e proteção rigorosa contra ataques astrais, inveja pesada e ambientes carregados.",
+      "substituicao": "Guiné ou Eucalipto (para limpezas de corte e descarrego)."
+    },
+    {
+      "nome": "Anis-Estrelado",
+      "tipo": "Especiaria / Semente",
+      "energia": "Prosperidade, intuição fina, sincronicidade e abertura espiritual",
+      "classificacao": "Morna (Expansiva)",
+      "utilizacao": "Excelente para atrair oportunidades financeiras, aguçar a intuição antes de leituras ou decisões e elevar o padrão vibratório com elegância.",
+      "substituicao": "Louro (para conquistas e metas) ou Noz-Moscada."
+    },
+    {
+      "nome": "Camomila",
+      "tipo": "Flor",
+      "energia": "Calma, acolhimento, suavização e paz emocional",
+      "classificacao": "Fria (Apaziguadora)",
+      "utilizacao": "Indicada para acalmar sistemas nervosos exaltados, curar mágoas, reduzir a ansiedade profunda e induzir um sono reparador.",
+      "substituicao": "Lavanda (Alfazema) ou Folha de Laranjeira."
+    },
+    {
+      "nome": "Capim-Limão",
+      "tipo": "Erva (Folhas)",
+      "energia": "Paz mental, relaxamento físico e alívio de tensões",
+      "classificacao": "Fria/Morna (Equilíbrio)",
+      "utilizacao": "Ideal para aliviar o estresse acumulado no trabalho, descontrair a musculatura da aura e trazer leveza para o dia a dia.",
+      "substituicao": "Camomila ou Folha de Laranjeira."
+    },
+    {
+      "nome": "Canela",
+      "tipo": "Casca ou Pó",
+      "energia": "Fogo, dinamismo, sucesso financeiro e calor magnético",
+      "classificacao": "Quente (Aceleradora)",
+      "utilizacao": "Potencializa drasticamente banhos de prosperidade, acelera resultados materiais e esquenta o magnetismo pessoal e de atração.",
+      "substituicao": "Cravo-da-Índia (para fixação e força) ou Casca de Laranja seca."
+    },
+    {
+      "nome": "Cravo-da-Índia",
+      "tipo": "Especiaria (Capulho)",
+      "energia": "Blindagem, corte de miasmas, fixação energética e respeito",
+      "classificacao": "Quente (Defesa e Fixação)",
+      "utilizacao": "Atua como um selo de proteção contra vampirismo astral e fixa a frequência de poder e autoridade pessoal.",
+      "substituicao": "Canela em casca (para aquecimento) ou Semente de Girassol."
+    },
+    {
+      "nome": "Espada-de-São-Jorge",
+      "tipo": "Erva (Folhas em Tiras)",
+      "energia": "Corte implacável, escudo de defesa e proteção de caminhos",
+      "classificacao": "Quente (Forte Defesa)",
+      "utilizacao": "Fatiada finamente em banhos de limpeza profunda para cortar cordões astrais negativos, inveja crônica e oposição direta.",
+      "substituicao": "Guiné ou Aroeira."
+    },
+    {
+      "nome": "Guiné",
+      "tipo": "Erva (Folhas)",
+      "energia": "Varredura de larvas astrais, defesa e desmanche de cargas",
+      "classificacao": "Quente (Descarrego Profundo)",
+      "utilizacao": "Poderosa aliada na quebra de egrégoras densas e afastamento de influências espirituais nocivas.",
+      "substituicao": "Aroeira ou Espada-de-São-Jorge."
+    },
+    {
+      "nome": "Lavanda",
+      "tipo": "Flor",
+      "energia": "Transmutação mental, serenidade, limpeza sutil e elevação",
+      "classificacao": "Fria (Transmutadora)",
+      "utilizacao": "Limpa pensamentos obsessivos, transmuta o estresse acumulado em paz e prepara o campo para intuições claras.",
+      "substituicao": "Camomila ou Rosa Branca."
+    },
+    {
+      "nome": "Louro",
+      "tipo": "Folha",
+      "energia": "Realização, vitória, foco em metas e coroa de sucesso",
+      "classificacao": "Morna (Realizadora)",
+      "utilizacao": "Utilizada em rituais de prosperidade, conquistas profissionais, clareza de objetivos e blindagem de mérito.",
+      "substituicao": "Anis-Estrelado (para caminhos) ou Semente de Girassol."
+    },
+    {
+      "nome": "Macassá",
+      "tipo": "Erva / Perfume",
+      "energia": "Fascínio, doçura magnética, convencimento e poder de Pombagira",
+      "classificacao": "Morna (Magnetismo)",
+      "utilizacao": "Erva clássica de encanto, atração de respeito, doçura no trato social e empoderamento pessoal.",
+      "substituicao": "Jasmim ou Rosa Vermelha."
+    },
+    {
+      "nome": "Manjericão",
+      "tipo": "Erva (Folhes)",
+      "energia": "Renovação, harmonização, limpeza suave e equilíbrio",
+      "classificacao": "Morna (Equilibradora)",
+      "utilizacao": "O grande coringa da harmonização áurica, limpando com suavidade e trazendo paz sem agredir o campo energético.",
+      "substituicao": "Folha de Laranjeira ou Hortelã."
+    },
+    {
+      "nome": "Raiz de Gengibre",
+      "tipo": "Raiz",
+      "energia": "Fogo interno, vigor físico, quebra de apatia e ação rápida",
+      "classificacao": "Quente (Estimulante)",
+      "utilizacao": "Ralada em pequenas quantidades para injetar vitalidade em momentos de cansaço extremo e estagnação crônica.",
+      "substituicao": "Alecrim ou Cravo-da-Índia."
+    },
+    {
+      "nome": "Raiz de Vetiver",
+      "tipo": "Raiz",
+      "energia": "Aterramento bruto, profundidade, estrutura e firmeza material",
+      "classificacao": "Morna/Quente (Aterradora)",
+      "utilizacao": "Excelente para tirar a instabilidade emocional, firmar os passos na matéria e estancar dispersões de energia.",
+      "substituicao": "Cravo-da-Índia ou Semente de Girassol."
+    },
+    {
+      "nome": "Rosa Branca",
+      "tipo": "Flor",
+      "energia": "Paz espiritual, purificação suave, acolhimento e cura",
+      "classificacao": "Fria (Apaziguadora)",
+      "utilizacao": "Acolhe o coração ferido, limpa mágoas profundas, purifica a aura e sintoniza com frequências de harmonia.",
+      "substituicao": "Camomila ou Lavanda."
+    },
+    {
+      "nome": "Rosa Vermelha",
+      "tipo": "Flor",
+      "energia": "Paixão, amor-próprio inegociável, força vital e magnetismo",
+      "classificacao": "Morna (Ativadora de Afeto)",
+      "utilizacao": "Desperta a autoestima, exalta a presença magnética e fortalece o poder de sedução e autovalorização.",
+      "substituicao": "Hibisco ou Macassá."
+    }
+  ],
   "banhos": [
     {
       "id": 1,
