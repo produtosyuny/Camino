@@ -10,19 +10,11 @@
   "fichas_ervas": [
     {
       "nome": "Alecrim",
-      "tipo": "Erva (Folhes)",
+      "tipo": "Erva (Folhas)",
       "energia": "Vitalidade, foco, coragem e limpeza mental",
       "classificacao": "Morna/Quente (Ativadora)",
       "utilizacao": "Indispensável para quebrar inércia, trazer ânimo pela manhã, estimular a clareza de raciocínio e dar firmeza em propósitos de trabalho e atitude.",
       "substituicao": "Hortelã (para o frescor e clareza mental) ou Casca de Laranja seca (para o ânimo e movimento)."
-    },
-    {
-      "nome": "Aroeira",
-      "tipo": "Erva (Folhas)",
-      "energia": "Defesa pesada, quebra de demandas e corte de energias densas",
-      "classificacao": "Quente (Forte Descarrego)",
-      "utilizacao": "Usada em banhos de limpeza profunda e proteção rigorosa contra ataques astrais, inveja pesada e ambientes carregados.",
-      "substituicao": "Guiné ou Eucalipto (para limpezas de corte e descarrego)."
     },
     {
       "nome": "Anis-Estrelado",
@@ -33,12 +25,44 @@
       "substituicao": "Louro (para conquistas e metas) ou Noz-Moscada."
     },
     {
+      "nome": "Aroeira",
+      "tipo": "Erva (Folhas)",
+      "energia": "Defesa pesada, quebra de demandas e corte de energias densas",
+      "classificacao": "Quente (Forte Descarrego)",
+      "utilizacao": "Usada em banhos de limpeza profunda e proteção rigorosa contra ataques astrais, inveja pesada e ambientes carregados.",
+      "substituicao": "Guiné ou Eucalipto (para limpezas de corte e descarrego)."
+    },
+    {
+      "nome": "Calêndula",
+      "tipo": "Flor",
+      "energia": "Brilho solar, alegria, merecimento e expansão da abundância",
+      "classificacao": "Morna (Ativadora Solar)",
+      "utilizacao": "Atrai o magnetismo da prosperidade, eleva o otimismo e garante destaque e reconhecimento profissional e pessoal.",
+      "substituicao": "Rosa Amarela ou Casca de Laranja."
+    },
+    {
       "nome": "Camomila",
       "tipo": "Flor",
       "energia": "Calma, acolhimento, suavização e paz emocional",
       "classificacao": "Fria (Apaziguadora)",
       "utilizacao": "Indicada para acalmar sistemas nervosos exaltados, curar mágoas, reduzir a ansiedade profunda e induzir um sono reparador.",
       "substituicao": "Lavanda (Alfazema) ou Folha de Laranjeira."
+    },
+    {
+      "nome": "Canela em Casca",
+      "tipo": "Casca",
+      "energia": "Fogo, dinamismo, sucesso financeiro e calor magnético",
+      "classificacao": "Quente (Aceleradora)",
+      "utilizacao": "Potencializa drasticamente banhos de prosperidade, acelera resultados materiais e esquenta o magnetismo pessoal e de atração.",
+      "substituicao": "Cravo-da-Índia (para fixação e força) ou Casca de Laranja seca."
+    },
+    {
+      "nome": "Canela em Pó",
+      "tipo": "Pó",
+      "energia": "Fogo rápido, atração de vendas e dinamismo comercial",
+      "classificacao": "Quente (Aceleradora)",
+      "utilizacao": "Usada para dinamizar rapidamente os ganhos financeiros e intensificar o valor pessoal e o respeito alheio.",
+      "substituicao": "Canela em Casca ou Noz-Moscada."
     },
     {
       "nome": "Capim-Limão",
@@ -49,20 +73,52 @@
       "substituicao": "Camomila ou Folha de Laranjeira."
     },
     {
-      "nome": "Canela",
-      "tipo": "Casca ou Pó",
-      "energia": "Fogo, dinamismo, sucesso financeiro e calor magnético",
-      "classificacao": "Quente (Aceleradora)",
-      "utilizacao": "Potencializa drasticamente banhos de prosperidade, acelera resultados materiais e esquenta o magnetismo pessoal e de atração.",
-      "substituicao": "Cravo-da-Índia (para fixação e força) ou Casca de Laranja seca."
+      "nome": "Casca de Bergamota",
+      "tipo": "Casca Cítrica",
+      "energia": "Desbloqueio financeiro, ânimo e movimento material",
+      "classificacao": "Morna (Estimulante)",
+      "utilizacao": "Atua limpando bloqueios de escassez e injetando otimismo e clareza para tomadas de decisões econômicas.",
+      "substituicao": "Casca de Tangerina ou Casca de Laranja."
     },
     {
-      "nome": "Cravo-da-Índia",
+      "nome": "Casca de Laranja Seca",
+      "tipo": "Casca Cítrica",
+      "energia": "Alegria, dinamismo monetário e entusiasmo",
+      "classificacao": "Morna (Expansiva)",
+      "utilizacao": "Move energias paradas no campo financeiro e traz leveza e bom ânimo para o cotidiano.",
+      "substituicao": "Casca de Tangerina ou Calêndula."
+    },
+    {
+      "nome": "Casca de Limão Siciliano",
+      "tipo": "Casca Cítrica",
+      "energia": "Varredura ácida, limpeza de resíduos densos e frescor",
+      "classificacao": "Quente/Morna (Limpeza)",
+      "utilizacao": "Utilizada para dissolver miasmas pesados, limpar ambientes áuricos estagnados e renovar o campo.",
+      "substituicao": "Eucalipto ou Aroeira."
+    },
+    {
+      "nome": "Casca de Tangerina",
+      "tipo": "Casca Cítrica",
+      "energia": "Abertura de caminhos de expansão e quebra de estagnação",
+      "classificacao": "Morna (Movimento)",
+      "utilizacao": "Rompimento de barreiras financeiras e atração de novas oportunidades profissionais.",
+      "substituicao": "Casca de Bergamota ou Casca de Laranja Seca."
+    },
+    {
+      "nome": "Cravo da Índia",
       "tipo": "Especiaria (Capulho)",
       "energia": "Blindagem, corte de miasmas, fixação energética e respeito",
       "classificacao": "Quente (Defesa e Fixação)",
       "utilizacao": "Atua como um selo de proteção contra vampirismo astral e fixa a frequência de poder e autoridade pessoal.",
       "substituicao": "Canela em casca (para aquecimento) ou Semente de Girassol."
+    },
+    {
+      "nome": "Eucalipto",
+      "tipo": "Erva (Folhas)",
+      "energia": "Desobstrução áurica, limpeza respiratória e mental profunda",
+      "classificacao": "Quente (Descarrego)",
+      "utilizacao": "Abre espaço na aura para circulação da energia vital e remove miasmas pesados acumulados.",
+      "substituicao": "Hortelã ou Aroeira."
     },
     {
       "nome": "Espada-de-São-Jorge",
@@ -73,12 +129,52 @@
       "substituicao": "Guiné ou Aroeira."
     },
     {
+      "nome": "Folha de Abacateiro",
+      "tipo": "Erva (Folhas)",
+      "energia": "Fartura, abertura de caminhos materiais e circulação de prosperidade",
+      "classificacao": "Morna (Prosperadora)",
+      "utilizacao": "Selamento de egrégoras de riqueza contínua e atração de abundância nos negócios.",
+      "substituicao": "Louro ou Folha de Laranjeira."
+    },
+    {
+      "nome": "Folha de Laranjeira",
+      "tipo": "Erva (Folhas)",
+      "energia": "Paz reconfortante, alegria suave e harmonia afetiva",
+      "classificacao": "Fria/Morna (Acolhedora)",
+      "utilizacao": "Desfaz tensões emocionais, traz alegria íntima e pacifica conflitos nos relacionamentos.",
+      "substituicao": "Camomila ou Capim-Limão."
+    },
+    {
       "nome": "Guiné",
       "tipo": "Erva (Folhas)",
       "energia": "Varredura de larvas astrais, defesa e desmanche de cargas",
       "classificacao": "Quente (Descarrego Profundo)",
       "utilizacao": "Poderosa aliada na quebra de egrégoras densas e afastamento de influências espirituais nocivas.",
       "substituicao": "Aroeira ou Espada-de-São-Jorge."
+    },
+    {
+      "nome": "Hibisco",
+      "tipo": "Flor",
+      "energia": "Expansão da aura, destaque pessoal e atração visual",
+      "classificacao": "Morna (Ativadora de Presença)",
+      "utilizacao": "Exalta a beleza, a autoconfiança magnética e a presença marcante em qualquer ambiente.",
+      "substituicao": "Rosa Vermelha ou Macassá."
+    },
+    {
+      "nome": "Hortelã",
+      "tipo": "Erva (Folhas)",
+      "energia": "Frescor mental, raciocínio rápido e limpeza de pensamentos fixos",
+      "classificacao": "Morna/Fria (Refrescante)",
+      "utilizacao": "Combate a exaustão mental, resfria ideias obsessivas de escassez e traz clareza operacional.",
+      "substituicao": "Alecrim ou Eucalipto."
+    },
+    {
+      "nome": "Jasmim",
+      "tipo": "Flor",
+      "energia": "Intuição refinada, sofisticação espiritual e conexões verdadeiras",
+      "classificacao": "Morna (Sutilizadora)",
+      "utilizacao": "Atrai parcerias alinhadas, eleva a autoestima espiritual e aguça a percepção intuitiva.",
+      "substituicao": "Rosa Amarela ou Macassá."
     },
     {
       "nome": "Lavanda",
@@ -105,12 +201,20 @@
       "substituicao": "Jasmim ou Rosa Vermelha."
     },
     {
-      "nome": "Manjericão",
-      "tipo": "Erva (Folhes)",
-      "energia": "Renovação, harmonização, limpeza suave e equilíbrio",
-      "classificacao": "Morna (Equilibradora)",
-      "utilizacao": "O grande coringa da harmonização áurica, limpando com suavidade e trazendo paz sem agredir o campo energético.",
-      "substituicao": "Folha de Laranjeira ou Hortelã."
+      "nome": "Noz-Moscada",
+      "tipo": "Especiaria / Semente",
+      "energia": "Intuição comercial, ganhos inesperados e percepção aguçada",
+      "classificacao": "Morna (Expansiva)",
+      "utilizacao": "Favorece a visão estratégica em negócios e amplia a percepção intuitiva dos ambientes.",
+      "substituicao": "Anis-Estrelado ou Canela em Pó."
+    },
+    {
+      "nome": "Poejo",
+      "tipo": "Erva (Folhas)",
+      "energia": "Limpeza de registros mentais de derrota e foco de rumo",
+      "classificacao": "Morna (Clareza Mental)",
+      "utilizacao": "Remove confusões mentais que geram paralisia e protege o campo contra armadilhas energéticas sutis.",
+      "substituicao": "Alecrim ou Hortelã."
     },
     {
       "nome": "Raiz de Gengibre",
@@ -129,6 +233,14 @@
       "substituicao": "Cravo-da-Índia ou Semente de Girassol."
     },
     {
+      "nome": "Rosa Amarela",
+      "tipo": "Flor",
+      "energia": "Brilho relacional, alegria, autoconfiança e valor próprio",
+      "classificacao": "Morna (Expansiva)",
+      "utilizacao": "Ilumina a expressão pessoal, atrai conexões felizes e fortalece a independência emocional.",
+      "substituicao": "Calêndula ou Jasmim."
+    },
+    {
       "nome": "Rosa Branca",
       "tipo": "Flor",
       "energia": "Paz espiritual, purificação suave, acolhimento e cura",
@@ -143,6 +255,38 @@
       "classificacao": "Morna (Ativadora de Afeto)",
       "utilizacao": "Desperta a autoestima, exalta a presença magnética e fortalece o poder de sedução e autovalorização.",
       "substituicao": "Hibisco ou Macassá."
+    },
+    {
+      "nome": "Sal Grosso (mínimo)",
+      "tipo": "Mineral",
+      "energia": "Neutralização iônica e descarrego denso",
+      "classificacao": "Quente (Neutralizador)",
+      "utilizacao": "Utilizado em proporções mínimas para quebra de cargas iônicas pesadas no campo áurico.",
+      "substituicao": "Aroeira ou Guiné."
+    },
+    {
+      "nome": "Semente de Coentro",
+      "tipo": "Semente",
+      "energia": "Limpeza de repetições intrusas e resistência alheia",
+      "classificacao": "Morna (Harmonizadora)",
+      "utilizacao": "Limpa resistências de terceiros às suas ideias e remove padrões mentais repetitivos.",
+      "substituicao": "Semente de Funcho ou Louro."
+    },
+    {
+      "nome": "Semente de Funcho",
+      "tipo": "Semente",
+      "energia": "Doçura harmoniosa, ponderação e limites saudáveis",
+      "classificacao": "Morna (Suavizadora)",
+      "utilizacao": "Traz doçura ao trato sem perda de limites e harmoniza interações relacionais.",
+      "substituicao": "Semente de Coentro ou Folha de Laranjeira."
+    },
+    {
+      "nome": "Semente de Girassol",
+      "tipo": "Semente",
+      "energia": "Altivez, expansão da aura e postura segura",
+      "classificacao": "Morna (Altiva)",
+      "utilizacao": "Firma a postura perante os outros, devolve o brilho áurico e apoia o crescimento sustentável.",
+      "substituicao": "Raiz de Vetiver ou Louro."
     }
   ],
   "banhos": [
@@ -218,7 +362,7 @@
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
       "finalidade": "Magnetismo pessoal e atração de respeito inabalável.",
-      "ervas": ["Rosa Vermelha", "Macassá", "Cravo-da-Índia", "Semente de Girassol"],
+      "ervas": ["Rosa Vermelha", "Macassá", "Cravo da Índia", "Semente de Girassol"],
       "explicacao": "A rosa vermelha desperta a paixão e o amor-próprio; o macassá traz o perfume clássico de fascínio e convencimento; o cravo da Índia impõe respeito e blindagem magnética; a semente de girassol projeta a presença com altivez.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para magnetismo pessoal e atração de respeito inabalável.",
       "preparo": "Ferva 1 litro de água com os cravos da índia e as sementes de girassol por 3 minutos. Desligue o fogo, adicione o macassá e as pétalas de rosa vermelha. Abafe por 10 minutos, coe delicadamente e tome do pescoço para baixo."
@@ -251,7 +395,7 @@
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
       "finalidade": "Equilíbrio emocional profundo aliado a um encanto magnético.",
-      "ervas": ["Rosa Vermelha", "Lavanda", "Cravo-da-Índia", "Casca de Laranja"],
+      "ervas": ["Rosa Vermelha", "Lavanda", "Cravo da Índia", "Casca de Laranja Seca"],
       "explicacao": "A rosa vermelha mexe com a força vital do coração; a lavanda pacifica a ansiedade e o excesso de expectativas; o cravo da Índia blinda contra chantagens emocionais; a casca de laranja injeta entusiasmo e leveza.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para equilíbrio emocional profundo aliado a um encanto magnético.",
       "preparo": "Ferva 1,5 litro de água com as cascas de laranja e os cravos por 3 minutos. Desligue, acrescente a lavanda e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
@@ -372,7 +516,7 @@
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
       "finalidade": "Brilho no olhar, alegria contagiante e valorização pessoal.",
-      "ervas": ["Rosa Amarela", "Calêndula", "Casca de Laranja", "Macassá"],
+      "ervas": ["Rosa Amarela", "Calêndula", "Casca de Laranja Seca", "Macassá"],
       "explicacao": "A rosa amarela ilumina a expressão e o valor próprio; a calêndula atrai o brilho solar da alegria; a casca de laranja dissolve a timidez excessiva; o macassá exala um perfume magnético inconfundível.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para brilho no olhar, alegria contagiante e valorização pessoal.",
       "preparo": "Ferva 1,5 litro de água com as cascas de laranja por 3 minutos. Desligue, junte a calêndula, o macassá e as pétalas de rosa amarela. Abafe por 10 minutos, coe e tome do pescoço para baixo."
@@ -383,7 +527,7 @@
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
       "finalidade": "Intensidade, entrega consciente e magnetismo relacional.",
-      "ervas": ["Hibisco", "Rosa Vermelha", "Cravo-da-Índia", "Noz-Moscada"],
+      "ervas": ["Hibisco", "Rosa Vermelha", "Cravo da Índia", "Noz-Moscada"],
       "explicacao": "O hibisco expande o poder de atração visual e energética; a rosa vermelha intensifica os sentimentos de afeto; o cravo da Índia protege a união de interferências externas; a noz-moscada desperta a cumplicidade intuitiva.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para intensidade, entrega consciente e magnetismo relacional.",
       "preparo": "Ferva 1,5 litro de água com os cravos da índia e uma pitada de noz-moscada ralada por 3 minutos. Desligue, adicione o hibisco e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
@@ -449,7 +593,7 @@
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
       "finalidade": "Organização de ideias, foco operacional e alívio de estresse laboral.",
-      "ervas": ["Capim-Limão", "Alecrim", "Casca de Laranja", "Semente de Girassol"],
+      "ervas": ["Capim-Limão", "Alecrim", "Casca de Laranja Seca", "Semente de Girassol"],
       "explicacao": "O capim-limão acalma a pressão do ambiente corporativo; o alecrim estrutura a ordem mental; a casca de laranja traz leveza e ânimo para executar tarefas; a semente de girassol firma a produtividade com foco.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para organização de ideias, foco operacional e alívio de estresse laboral.",
       "preparo": "Ferva 1,5 litro de água com as cascas de laranja e as sementes de girassol por 3 minutos. Desligue, junte o capim-limão e o alecrim. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
@@ -526,7 +670,7 @@
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
       "finalidade": "Brilho e prosperidade associados ao valor do próprio trabalho.",
-      "ervas": ["Anis-Estrelado", "Noz-Moscada", "Casca de Laranja", "Rosa Amarela"],
+      "ervas": ["Anis-Estrelado", "Noz-Moscada", "Casca de Laranja Seca", "Rosa Amarela"],
       "explicacao": "O anis-estrelado atrai oportunidades valiosas; a noz-moscada favorece a intuição comercial; a casca de laranja energiza a alegria de produzir; a rosa amarela garante que seu valor pessoal seja reconhecido financeiramente.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para brilho e prosperidade associados ao valor do próprio trabalho.",
       "preparo": "Ferva 1,5 litro de água com as cascas de laranja, os anis-estrelados e uma pitada de noz-moscada por 3 minutos. Desligue, adicione as pétalas de rosa amarela. Abafe por 10 minutos, coe e tome do pescoço para baixo."
@@ -559,7 +703,7 @@
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
       "finalidade": "Reconhecimento do próprio valor sem autocobrança excessiva.",
-      "ervas": ["Calêndula", "Casca de Laranja", "Macassá", "Camomila"],
+      "ervas": ["Calêndula", "Casca de Laranja Seca", "Macassá", "Camomila"],
       "explicacao": "A calêndula traz o brilho de aceitação pessoal; a casca de laranja dissolve a culpa e traz leveza; o macassá exala a doçura de se amar; a camomila acalma a autocrítica severa e o perfeccionismo.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para reconhecimento do próprio valor sem autocobrança excessiva.",
       "preparo": "Ferva 1,5 litro de água com as cascas de laranja por 3 minutos. Desligue, acrescente a calêndula, o macassá e a camomila. Abafe por 10 minutos, coe e tome do pescoço para baixo."
@@ -570,7 +714,7 @@
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
       "finalidade": "Força de vontade inabalável e coragem para ocupar espaço.",
-      "ervas": ["Raiz de Gengibre", "Alecrim", "Cravo-da-Índia", "Louro"],
+      "ervas": ["Raiz de Gengibre", "Alecrim", "Cravo da Índia", "Louro"],
       "explicacao": "A raiz de gengibre desperta o fogo interno de atitude; o alecrim traz firmeza de propósitos; o cravo da Índia protege sua coragem contra opiniões alheias; o louro garante a vitória ao ocupar seu espaço de direito.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para força de vontade inabalável e coragem para ocupar espaço.",
       "preparo": "Ferva 2 litros de água com a raiz de gengibre ralada, os cravos e o louro por 4 minutos. Desligue, junte o alecrim. Abafe por 10 minutos, coe e tome do pescoço para baixo."
