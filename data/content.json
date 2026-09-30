@@ -10,531 +10,531 @@
   "banhos": [
     {
       "id": 1,
-      "titulo": "1. Banho Exu — Ciclo 1",
+      "titulo": "Impeto e Direção",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para força de rumo e corte de inércia.",
+      "finalidade": "Força de rumo e corte de inércia.",
       "ervas": ["Alecrim", "Raiz de Gengibre", "Casca de Laranja Seca", "Poejo"],
       "explicacao": "O alecrim traz disposição e clareza de rumo; a raiz de gengibre injeta vitalidade física e quebra a apatia; a casca de laranja seca atrai movimento material e alegria de atitude; o poejo limpa a mente de confusões que geram paralisia.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para força de rumo e corte de inércia.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Alecrim, Raiz de Gengibre, Casca de Laranja Seca, Poejo), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Em uma panela com 1,5 litro de água, coloque a raiz de gengibre ralada e as cascas de laranja seca. Ferva por 4 minutos. Desligue o fogo, adicione o alecrim e o poejo. Cubra e abafe por 10 minutos. Coe e faça o banho do pescoço para baixo."
     },
     {
       "id": 2,
-      "titulo": "2. Banho Exu — Ciclo 2",
+      "titulo": "Firmeza de Caminho",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para firmeza, corte de demandas e abertura de picada.",
+      "finalidade": "Firmeza, corte de demandas e abertura de picada.",
       "ervas": ["Aroeira", "Guiné", "Semente de Coentro", "Cravo da Índia"],
       "explicacao": "A aroeira atua como forte elemento de quebra de demandas densas; a guiné afasta larvas astrais e invejas pesadas; a semente de coentro limpa a repetição de energias intrusas; o cravo da Índia blinda e fixa a nova frequência de proteção.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para firmeza, corte de demandas e abertura de picada.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Aroeira, Guiné, Semente de Coentro, Cravo da Índia), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1 litro de água com os cravos da índia e as sementes de coentro levemente amassadas por 3 minutos. Desligue, adicione as folhas de aroeira e guiné. Abafe por 15 minutos com tampa, espere amornar, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 3,
-      "titulo": "3. Banho Exu — Ciclo 3",
+      "titulo": "Destrave Material",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para movimento material e quebra de estagnação mental.",
+      "finalidade": "Movimento material e quebra de estagnação mental.",
       "ervas": ["Casca de Bergamota", "Alecrim", "Anis-Estrelado", "Hortelã"],
       "explicacao": "A casca de bergamota desbloqueia o campo financeiro e traz ânimo; o alecrim ativa a força de vontade; o anis-estrelado abre a intuição para oportunidades; a hortelã traz frescor mental e limpa pensamentos fixos de escassez.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para movimento material e quebra de estagnação mental.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Casca de Bergamota, Alecrim, Anis-Estrelado, Hortelã), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de bergamota e os anis-estrelados inteiros por 4 minutos. Desligue o fogo, acrescente o alecrim e a hortelã. Abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
     },
     {
       "id": 4,
-      "titulo": "4. Banho Exu — Ciclo 4",
+      "titulo": "Raiz e Escudo",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para aterramento bruto e blindagem contra baixas vibrações.",
+      "finalidade": "Aterramento bruto e blindagem contra baixas vibrações.",
       "ervas": ["Raiz de Vetiver", "Aroeira", "Louro", "Semente de Girassol"],
       "explicacao": "A raiz de vetiver promove um aterramento profundo e físico; a aroeira corta energias de oposição; o louro direciona a energia para a realização firme; a semente de girassol devolve a expansão e a altivez ao campo áurico.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para aterramento bruto e blindagem contra baixas vibrações.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Raiz de Vetiver, Aroeira, Louro, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de vetiver picada e as folhas de louro por 5 minutos. Desligue o fogo, junte a aroeira e as sementes de girassol. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 5,
-      "titulo": "5. Banho Exu — Ciclo 5",
+      "titulo": "Corte de Recuo",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para limpeza de miasmas de recuo e retomada de atitude.",
+      "finalidade": "Limpeza de miasmas de recuo e retomada de atitude.",
       "ervas": ["Poejo", "Guiné", "Casca de Limão Siciliano", "Alecrim"],
       "explicacao": "O poejo limpa registros mentais de derrota; a guiné corta influências nocivas externas; a casca de limão siciliano faz uma varredura ácida em bloqueios estagnados; o alecrim devolve a coragem e a iniciativa.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para limpeza de miasmas de recuo e retomada de atitude.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Poejo, Guiné, Casca de Limão Siciliano, Alecrim), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água apenas com as cascas de limão siciliano por 3 minutos. Desligue o fogo, adicione o poejo, a guiné e o alecrim. Abafe por 10 minutos, coe completamente e tome do pescoço para baixo."
     },
     {
       "id": 6,
-      "titulo": "6. Banho Exu — Ciclo 6",
+      "titulo": "Foco nos Negócios",
       "direcionamento": "Exu",
       "categoria": "Exu",
-      "finalidade": "Desenvolvido para prosperidade de corte, foco e realização nos negócios.",
+      "finalidade": "Prosperidade de corte, foco e realização nos negócios.",
       "ervas": ["Folha de Abacateiro", "Cravo da Índia", "Raiz de Gengibre", "Louro"],
       "explicacao": "A folha de abacateiro atrai a energia de fartura e abertura de caminhos materiais; o cravo da Índia blinda contra sabotagens nos negócios; a raiz de gengibre acelera a execução prática; o louro coroa com a vitória e conquista.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para prosperidade de corte, foco e realização nos negócios.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Folha de Abacateiro, Cravo da Índia, Raiz de Gengibre, Louro), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com os cravos, a raiz de gengibre ralada e as folhas de louro por 4 minutos. Desligue, acrescente as folhas de abacateiro. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 7,
-      "titulo": "7. Banho Pombagira — Ciclo 1",
+      "titulo": "Fascínio e Presença",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para magnetismo pessoal e atração de respeito inabalável.",
+      "finalidade": "Magnetismo pessoal e atração de respeito inabalável.",
       "ervas": ["Rosa Vermelha", "Macassá", "Cravo-da-Índia", "Semente de Girassol"],
       "explicacao": "A rosa vermelha desperta a paixão e o amor-próprio; o macassá traz o perfume clássico de fascínio e convencimento; o cravo da Índia impõe respeito e blindagem magnética; a semente de girassol projeta a presença com altivez.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para magnetismo pessoal e atração de respeito inabalável.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Vermelha, Macassá, Cravo-da-Índia, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1 litro de água com os cravos da índia e as sementes de girassol por 3 minutos. Desligue o fogo, adicione o macassá e as pétalas de rosa vermelha. Abafe por 10 minutos, coe delicadamente e tome do pescoço para baixo."
     },
     {
       "id": 8,
-      "titulo": "8. Banho Pombagira — Ciclo 2",
+      "titulo": "Doçura Magnética",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para fascínio, doçura no trato e clareza de posicionamento.",
+      "finalidade": "Fascínio, doçura no trato e clareza de posicionamento.",
       "ervas": ["Rosa Amarela", "Jasmim", "Canela em Casca", "Semente de Funcho"],
       "explicacao": "A rosa amarela atrai brilho e alegria relacional; o jasmim aguça a intuição e a sofisticação da fala; a canela em casca esquenta o poder de sedução sutil; a semente de funcho harmoniza e traz doçura sem perda de limites.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para fascínio, doçura no trato e clareza de posicionamento.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Amarela, Jasmim, Canela em Casca, Semente de Funcho), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com a canela em casca e as sementes de funcho por 4 minutos. Desligue, junte as pétalas de rosa amarela e as flores de jasmim. Abafe por 8 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 9,
-      "titulo": "9. Banho Pombagira — Ciclo 3",
+      "titulo": "Sutil Soberania",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para presença marcante, intuição afiada e empoderamento sutil.",
+      "finalidade": "Presença marcante, intuição afiada e empoderamento sutil.",
       "ervas": ["Hibisco", "Macassá", "Rosa Branca", "Noz-Moscada"],
       "explicacao": "O hibisco expande a aura e o destaque pessoal; o macassá traz o encanto magnético tradicional; a rosa branca purifica intenções e traz elegância espiritual; a noz-moscada amplia a percepção aguçada dos ambientes.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para presença marcante, intuição afiada e empoderamento sutil.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Hibisco, Macassá, Rosa Branca, Noz-Moscada), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1 litro de água com uma pitada de noz-moscada ralada por 2 minutos. Desligue o fogo, adicione o hibisco, o macassá e as pétalas de rosa branca. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 10,
-      "titulo": "10. Banho Pombagira — Ciclo 4",
+      "titulo": "Equilíbrio Escarlate",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para equilíbrio emocional profundo aliado a um encanto magnético.",
+      "finalidade": "Equilíbrio emocional profundo aliado a um encanto magnético.",
       "ervas": ["Rosa Vermelha", "Lavanda", "Cravo-da-Índia", "Casca de Laranja"],
       "explicacao": "A rosa vermelha mexe com a força vital do coração; a lavanda pacifica a ansiedade e o excesso de expectativas; o cravo da Índia blinda contra chantagens emocionais; a casca de laranja injeta entusiasmo e leveza.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para equilíbrio emocional profundo aliado a um encanto magnético.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Vermelha, Lavanda, Cravo-da-Índia, Casca de Laranja), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja e os cravos por 3 minutos. Desligue, acrescente a lavanda e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 11,
-      "titulo": "11. Banho Pombagira — Ciclo 5",
+      "titulo": "Sintonia Fina",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para abertura afetiva madura, leveza e magnetismo magnânimo.",
+      "finalidade": "Abertura afetiva madura, leveza e magnetismo magnânimo.",
       "ervas": ["Jasmim", "Rosa Amarela", "Anis-Estrelado", "Macassá"],
       "explicacao": "O jasmim atrai conexões refinadas e verdadeiras; a rosa amarela irradia autoconfiança e brilho próprio; o anis-estrelado abre os caminhos para o afeto saudável; o macassá consolida o poder de encanto pessoal.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para abertura afetiva madura, leveza e magnetismo magnânimo.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Jasmim, Rosa Amarela, Anis-Estrelado, Macassá). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1 litro de água com os anis-estrelados inteiros por 3 minutos. Desligue, adicione o jasmim, o macassá e as pétalas de rosa amarela. Abafe por 10 minutos com tampa, coe com cuidado e tome do pescoço para baixo."
     },
     {
       "id": 12,
-      "titulo": "12. Banho Pombagira — Ciclo 6",
+      "titulo": "Autonomia Sagrada",
       "direcionamento": "Pombagira",
       "categoria": "Pombagira",
-      "finalidade": "Desenvolvido para autonomia, poder pessoal e clareza de limites nas relações.",
+      "finalidade": "Autonomia, poder pessoal e clareza de limites nas relações.",
       "ervas": ["Rosa Branca", "Hibisco", "Raiz de Vetiver", "Canela em Pó"],
       "explicacao": "A rosa branca traz serenidade nas escolhas; o hibisco destaca a beleza e a presença; a raiz de vetiver fixa os limites e o eixo pessoal intransigível; a canela em pó energiza a autovalorização e o respeito alheio.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para autonomia, poder pessoal e clareza de limites nas relações.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Branca, Hibisco, Raiz de Vetiver, Canela em Pó), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com a raiz de vetiver picada por 5 minutos. Desligue o fogo, adicione a canela em pó, o hibisco e as pétalas de rosa branca. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 13,
-      "titulo": "13. Banho Limpeza Energética — Ciclo 1",
+      "titulo": "Faxina Astral Pesada",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para limpeza pesada de larvas astrais e inveja estagnada.",
+      "finalidade": "Limpeza pesada de larvas astrais e inveja estagnada.",
       "ervas": ["Guiné", "Aroeira", "Espada-de-São-Jorge", "Poejo"],
       "explicacao": "A guiné devora miasmas e energias de inveja; a aroeira quebra correntes astrais densas; a espada-de-são-jorge atua como espada de corte implacável contra o malfeito; o poejo limpa o campo mental associado à carga.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para limpeza pesada de larvas astrais e inveja estagnada.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Guiné, Aroeira, Espada-de-São-Jorge, Poejo). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água, desligue o fogo e adicione imediatamente as ervas frescas picadas (Guiné, Aroeira, Espada-de-São-Jorge em tiras finas e Poejo). Abafe por 15 minutos, coe muito bem e tome do pescoço para baixo antes do pôr do sol."
     },
     {
       "id": 14,
-      "titulo": "14. Banho Limpeza Energética — Ciclo 2",
+      "titulo": "Alívio Mental",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para descarrego de ambientes mentais e alívio de peso físico.",
+      "finalidade": "Descarrego de ambientes mentais e alívio de peso físico.",
       "ervas": ["Eucalipto", "Hortelã", "Casca de Limão Siciliano", "Sal Grosso (mínimo)"],
       "explicacao": "O eucalipto desobstrui as vias respiratórias e a aura de miasmas pesados; a hortelã resfria e limpa o calor mental excessivo; a casca de limão siciliano dissolve resíduos densos; o sal grosso atua na neutralização iônica da carga.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para descarrego de ambientes mentais e alívio de peso físico.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Eucalipto, Hortelã, Casca de Limão Siciliano, Sal Grosso (mínimo)), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de limão siciliano e uma colher mínima de sal grosso por 3 minutos. Desligue, junte as folhas de eucalipto e a hortelã. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 15,
-      "titulo": "15. Banho Limpeza Energética — Ciclo 3",
+      "titulo": "Sutileza e Calma",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para faxina energética suave, acalmando o sistema nervoso e a aura.",
+      "finalidade": "Faxina energética suave, acalmando o sistema nervoso e a aura.",
       "ervas": ["Lavanda", "Camomila", "Folha de Laranjeira", "Capim-Limão"],
       "explicacao": "A lavanda transuta o estresse em tranquilidade; a camomila acolhe o campo emocional ferido; a folha de laranjeira traz uma alegria suave e reconfortante; o capim-limão relaxa a musculatura e o sistema nervoso central.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para faxina energética suave, acalmando o sistema nervoso e a aura.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Lavanda, Camomila, Folha de Laranjeira, Capim-Limão). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água, desligue o fogo e adicione o capim-limão, a folha de laranjeira, a camomila e a lavanda. Abafe por 10 minutos para preservar os óleos essenciais, coe com cuidado e tome do pescoço para baixo."
     },
     {
       "id": 16,
-      "titulo": "16. Banho Limpeza Energética — Ciclo 4",
+      "titulo": "Repouso do Guerreiro",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para retirada de cargas acumuladas após o dia a dia intenso.",
+      "finalidade": "Retirada de cargas acumuladas após o dia a dia intenso.",
       "ervas": ["Alecrim", "Poejo", "Aroeira", "Casca de Bergamota"],
       "explicacao": "O alecrim remove o cansaço áurico e revigora; o poejo limpa o campo mental de preocupações fúteis; a aroeira remove resíduos de ambientes pesados; a casca de bergamota devolve o otimismo após a faxina.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para retirada de cargas acumuladas após o dia a dia intenso.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Alecrim, Poejo, Aroeira, Casca de Bergamota), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de bergamota por 3 minutos. Desligue, adicione o alecrim, o poejo e a aroeira. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 17,
-      "titulo": "17. Banho Limpeza Energética — Ciclo 5",
+      "titulo": "Corte de Oposição",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para corte definitivo de miasmas e energias de oposição sutil.",
+      "finalidade": "Corte definitivo de miasmas e energias de oposição sutil.",
       "ervas": ["Espada-de-São-Jorge", "Guiné", "Eucalipto", "Cravo da Índia"],
       "explicacao": "A espada-de-são-jorge fatia cordões energéticos negativos; a guiné desmancha larvas astrais; o eucalipto abre espaço para a livre circulação da energia vital; o cravo da Índia sela e protege o campo recém-limpo.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para corte definitivo de miasmas e energias de oposição sutil.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Espada-de-São-Jorge, Guiné, Eucalipto, Cravo da Índia), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com os cravos da índia por 3 minutos. Desligue, junte as tiras de espada-de-são-jorge, a guiné e o eucalipto. Abafe por 12 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 18,
-      "titulo": "18. Banho Limpeza Energética — Ciclo 6",
+      "titulo": "Restrução da Aura",
       "direcionamento": "Geral",
       "categoria": "Limpeza Energética",
-      "finalidade": "Desenvolvido para harmonização pós-limpeza, trazendo calmaria e restruturação áurica.",
+      "finalidade": "Harmonização pós-limpeza, trazendo calmaria e restruturação áurica.",
       "ervas": ["Camomila", "Lavanda", "Macassá", "Rosa Branca"],
       "explicacao": "A camomila acalma o sistema após o descarrego; a lavanda equilibra as frequências mentais; o macassá restaura o aroma de aconchego e bem-estar; a rosa branca preenche a aura com paz e integridade espiritual.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para harmonização pós-limpeza, trazendo calmaria e restruturação áurica.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Camomila, Lavanda, Macassá, Rosa Branca). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água, desligue o fogo e adicione a camomila, a lavanda, o macassá e as pétalas de rosa branca. Abafe por 10 minutos, coe delicadamente e tome do pescoço para baixo."
     },
     {
       "id": 19,
-      "titulo": "19. Banho Amor e Magnetismo — Ciclo 1",
+      "titulo": "Harmonia e Calor",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para atração de parcerias sadias, calor e reciprocidade afetiva.",
+      "finalidade": "Atração de parcerias sadias, calor e reciprocidade afetiva.",
       "ervas": ["Rosa Vermelha", "Canela em Casca", "Anis-Estrelado", "Jasmim"],
       "explicacao": "A rosa vermelha vibra o amor apaixonado e legítimo; a canela em casca esquenta o magnetismo de atração; o anis-estrelado abre as portas do destino para encontros felizes; o jasmim traz a afinidade de almas e doçura.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para atração de parcerias sadias, calor e reciprocidade afetiva.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Vermelha, Canela em Casca, Anis-Estrelado, Jasmim), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com a canela em casca e os anis-estrelados por 4 minutos. Desligue, adicione o jasmim e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 20,
-      "titulo": "20. Banho Amor e Magnetismo — Ciclo 2",
+      "titulo": "Cura do Coração",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para cuidado profundo com o amor-próprio e cicatrização de mágoas.",
+      "finalidade": "Cuidado profundo com o amor-próprio e cicatrização de mágoas.",
       "ervas": ["Rosa Branca", "Lavanda", "Camomila", "Semente de Funcho"],
       "explicacao": "A rosa branca limpa a culpa e traz leveza ao coração; a lavanda transuta ressentimentos passados; a camomila acolhe a criança interior ferida; a semente de funcho devolve a doçura e o respeito consigo mesma.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para cuidado profundo com o amor-próprio e cicatrização de mágoas.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Branca, Lavanda, Camomila, Semente de Funcho), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1 litro de água com as sementes de funcho por 3 minutos. Desligue, adicione a lavanda, a camomila e as pétalas de rosa branca. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 21,
-      "titulo": "21. Banho Amor e Magnetismo — Ciclo 3",
+      "titulo": "Brilho Solar",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para brilho no olhar, alegria contagiante e valorização pessoal.",
+      "finalidade": "Brilho no olhar, alegria contagiante e valorização pessoal.",
       "ervas": ["Rosa Amarela", "Calêndula", "Casca de Laranja", "Macassá"],
       "explicacao": "A rosa amarela ilumina a expressão e o valor próprio; a calêndula atrai o brilho solar da alegria; a casca de laranja dissolve a timidez excessiva; o macassá exala um perfume magnético inconfundível.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para brilho no olhar, alegria contagiante e valorização pessoal.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Amarela, Calêndula, Casca de Laranja, Macassá), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja por 3 minutos. Desligue, junte a calêndula, o macassá e as pétalas de rosa amarela. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 22,
-      "titulo": "22. Banho Amor e Magnetismo — Ciclo 4",
+      "titulo": "Intensidade Consciente",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para intensidade, entrega consciente e magnetismo relacional.",
+      "finalidade": "Intensidade, entrega consciente e magnetismo relacional.",
       "ervas": ["Hibisco", "Rosa Vermelha", "Cravo-da-Índia", "Noz-Moscada"],
       "explicacao": "O hibisco expande o poder de atração visual e energética; a rosa vermelha intensifica os sentimentos de afeto; o cravo da Índia protege a união de interferências externas; a noz-moscada desperta a cumplicidade intuitiva.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para intensidade, entrega consciente e magnetismo relacional.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Hibisco, Rosa Vermelha, Cravo-da-Índia, Noz-Moscada), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com os cravos da índia e uma pitada de noz-moscada ralada por 3 minutos. Desligue, adicione o hibisco e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 23,
-      "titulo": "23. Banho Amor e Magnetismo — Ciclo 5",
+      "titulo": "Paz A Dois",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para suavização de conflitos afetivos e resgate da paz a dois.",
+      "finalidade": "Suavização de conflitos afetivos e resgate da paz a dois.",
       "ervas": ["Camomila", "Rosa Branca", "Folha de Laranjeira", "Lavanda"],
       "explicacao": "A camomila desfaz a irritabilidade e discussões fúteis; a rosa branca harmoniza o campo sentimental; a folha de laranjeira traz leveza e bem-querer; a lavanda pacifica os ânimos exaltados.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para suavização de conflitos afetivos e resgate da paz a dois.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Camomila, Rosa Branca, Folha de Laranjeira, Lavanda). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água, desligue o fogo e adicione a camomila, a folha de laranjeira, a lavanda e as pétalas de rosa branca. Abafe por 10 minutos, coe delicadamente e tome do pescoço para baixo."
     },
     {
       "id": 24,
-      "titulo": "24. Banho Amor e Magnetismo — Ciclo 6",
+      "titulo": "Amor Sem Amarras",
       "direcionamento": "Geral",
       "categoria": "Amor e Magnetismo",
-      "finalidade": "Desenvolvido para expansão da autoconfiança para viver o amor sem amarras.",
+      "finalidade": "Expansão da autoconfiança para viver o amor sem amarras.",
       "ervas": ["Rosa Amarela", "Jasmim", "Canela em Pó", "Semente de Girassol"],
       "explicacao": "A rosa amarela fortalece a independência emocional; o jasmim eleva a autoestima espiritual; a canela em pó energiza o entusiasmo e a atração saudável; a semente de girassol firma a postura altiva e segura.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para expansão da autoconfiança para viver o amor sem amarras.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Amarela, Jasmim, Canela em Pó, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as sementes de girassol por 3 minutos. Desligue, junte a canela em pó, o jasmim e as pétalas de rosa amarela. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 25,
-      "titulo": "25. Banho Trabalho e Caminhos — Ciclo 1",
+      "titulo": "Abertura Profissional",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para abertura de portas profissionais e clareza em reuniões.",
+      "finalidade": "Abertura de portas profissionais e clareza em reuniões.",
       "ervas": ["Louro", "Alecrim", "Semente de Coentro", "Casca de Tangerina"],
       "explicacao": "O louro atrai o sucesso e a vitória profissional; o alecrim traz foco mental e firmeza na comunicação; a semente de coentro limpa resistências alheias às suas ideias; a casca de tangerina atrai oportunidades de expansão.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para abertura de portas profissionais e clareza em reuniões.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Louro, Alecrim, Semente de Coentro, Casca de Tangerina), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as folhas de louro, as cascas de tangerina e as sementes de coentro amassadas por 4 minutos. Desligue, acrescente o alecrim. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 26,
-      "titulo": "26. Banho Trabalho e Caminhos — Ciclo 2",
+      "titulo": "Clareza Operacional",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para disposição mental para solucionar impasses no trabalho.",
+      "finalidade": "Disposição mental para solucionar impasses no trabalho.",
       "ervas": ["Hortelã", "Raiz de Gengibre", "Louro", "Folha de Abacateiro"],
       "explicacao": "A hortelã refresca o raciocínio rápido; a raiz de gengibre combate a exaustão mental e dá pique; o louro aponta para a solução vitoriosa; a folha de abacateiro destrava a circulação de projetos parados.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para disposição mental para solucionar impasses no trabalho.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Hortelã, Raiz de Gengibre, Louro, Folha de Abacateiro), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de gengibre ralada e as folhas de louro por 4 minutos. Desligue o fogo, adicione a hortelã e a folha de abacateiro. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 27,
-      "titulo": "27. Banho Trabalho e Caminhos — Ciclo 3",
+      "titulo": "Conquista de Metas",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para foco em metas, crescimento de carreira e visibilidade justa.",
+      "finalidade": "Foco em metas, crescimento de carreira e visibilidade justa.",
       "ervas": ["Anis-Estrelado", "Louro", "Canela em Casca", "Calêndula"],
       "explicacao": "O anis-estrelado atrai boa sorte e intuição estratégica; o louro coroa a realização de metas; a canela em casca acelera resultados financeiros e profissionais; a calêndula garante destaque e reconhecimento merecido.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para foco em metas, crescimento de carreira e visibilidade justa.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Anis-Estrelado, Louro, Canela em Casca, Calêndula), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com a canela em casca, os anis-estrelados e o louro por 4 minutos. Desligue, adicione a calêndula. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 28,
-      "titulo": "28. Banho Trabalho e Caminhos — Ciclo 4",
+      "titulo": "Ordem e Foco",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para organização de ideias, foco operacional e alívio de estresse laboral.",
+      "finalidade": "Organização de ideias, foco operacional e alívio de estresse laboral.",
       "ervas": ["Capim-Limão", "Alecrim", "Casca de Laranja", "Semente de Girassol"],
       "explicacao": "O capim-limão acalma a pressão do ambiente corporativo; o alecrim estrutura a ordem mental; a casca de laranja traz leveza e ânimo para executar tarefas; a semente de girassol firma a produtividade com foco.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para organização de ideias, foco operacional e alívio de estresse laboral.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Capim-Limão, Alecrim, Casca de Laranja, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja e as sementes de girassol por 3 minutos. Desligue, junte o capim-limão e o alecrim. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 29,
-      "titulo": "29. Banho Trabalho e Caminhos — Ciclo 5",
+      "titulo": "Blindagem Corporativa",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para proteção contra concorrência desleal e ambientes corporativos densos.",
+      "finalidade": "Proteção contra concorrência desleal e ambientes corporativos densos.",
       "ervas": ["Espada-de-São-Jorge", "Louro", "Aroeira", "Cravo da Índia"],
       "explicacao": "A espada-de-são-jorge bloqueia energias mal intencionadas de colegas ou concorrentes; o louro mantém sua vitória em foco; a aroeira repele vibrações de olho gordo; o cravo da Índia blinda seu espaço de atuação.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para proteção contra concorrência desleal e ambientes corporativos densos.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Espada-de-São-Jorge, Louro, Aroeira, Cravo da Índia), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com os cravos da índia e as folhas de louro por 3 minutos. Desligue, adicione as tiras de espada-de-são-jorge e a aroeira. Abafe por 12 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 30,
-      "titulo": "30. Banho Trabalho e Caminhos — Ciclo 6",
+      "titulo": "Soberania em Nova Função",
       "direcionamento": "Geral",
       "categoria": "Trabalho e Caminhos",
-      "finalidade": "Desenvolvido para aterramento e firmeza para assumir novas responsabilidades.",
+      "finalidade": "Aterramento e firmeza para assumir novas responsabilidades.",
       "ervas": ["Raiz de Vetiver", "Louro", "Hortelã", "Casca de Bergamota"],
       "explicacao": "A raiz de vetiver traz maturidade e firmeza na base profissional; o louro sela o merecimento da nova posição; a hortelã traz clareza de comunicação diante de cobranças; a casca de bergamota dinamiza a gestão de tarefas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para aterramento e firmeza para assumir novas responsabilidades.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Raiz de Vetiver, Louro, Hortelã, Casca de Bergamota), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de vetiver picada, as cascas de bergamota e o louro por 5 minutos. Desligue, acrescente a hortelã. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 31,
-      "titulo": "31. Banho Prosperidade — Ciclo 1",
+      "titulo": "Ímã de Oportunidades",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para imã de oportunidades financeiras e expansão de ganhos.",
+      "finalidade": "Ímã de oportunidades financeiras e expansão de ganhos.",
       "ervas": ["Anis-Estrelado", "Calêndula", "Casca de Laranja Seca", "Canela em Casca"],
       "explicacao": "O anis-estrelado atrai correntes de riqueza e sincronicidade; a calêndula brilha o aspecto solar da abundância; a casca de laranja seca movimenta o fluxo monetário parado; a canela em casca acelera a concretização de ganhos.",
-      "intencao": "Que este banho limpe, fortifique e alinhe minha energia para imã de oportunidades financeiras e expansão de ganhos.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Anis-Estrelado, Calêndula, Casca de Laranja Seca, Canela em Casca), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "intencao": "Que este banho limpe, fortifique e alinhe minha energia para ímã de oportunidades financeiras e expansão de ganhos.",
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja, a canela em casca e os anis-estrelados por 4 minutos. Desligue, adicione a calêndula. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 32,
-      "titulo": "32. Banho Prosperidade — Ciclo 2",
+      "titulo": "Estratégia e Multiplicação",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para disciplina e visão estratégica para multiplicação de recursos.",
+      "finalidade": "Disciplina e visão estratégica para multiplicação de recursos.",
       "ervas": ["Noz-Moscada", "Louro", "Semente de Girassol", "Raiz de Gengibre"],
       "explicacao": "A noz-moscada atrai clareza em investimentos e ganhos inesperados; o louro traz a vitória financeira; a semente de girassol foca na expansão sustentável; a raiz de gengibre dá energia para correr atrás de metas lucrativas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para disciplina e visão estratégica para multiplicação de recursos.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Noz-Moscada, Louro, Semente de Girassol, Raiz de Gengibre), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de gengibre ralada, o louro, as sementes de girassol e uma pitada de noz-moscada por 4 minutos. Desligue, abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 33,
-      "titulo": "33. Banho Prosperidade — Ciclo 3",
+      "titulo": "Fartura Conquistada",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para sustentação material, fartura e blindagem contra escassez.",
+      "finalidade": "Sustentação material, fartura e blindagem contra escassez.",
       "ervas": ["Louro", "Anis-Estrelado", "Folha de Abacateiro", "Cravo da Índia"],
       "explicacao": "O louro consolida a conquista material; o anis-estrelado atrai prosperidade fina; a folha de abacateiro sela a egrégora de fartura contínua; o cravo da Índia blinda sua renda contra drenagens energéticas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para sustentação material, fartura e blindagem contra escassez.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Louro, Anis-Estrelado, Folha de Abacateiro, Cravo da Índia), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com os cravos da índia, o louro e os anis-estrelados por 4 minutos. Desligue, junte as folhas de abacateiro. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 34,
-      "titulo": "34. Banho Prosperidade — Ciclo 4",
+      "titulo": "Dinamismo Financeiro",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para dinamismo financeiro e quebra de bloqueios de merecimento.",
+      "finalidade": "Dinamismo financeiro e quebra de bloqueios de merecimento.",
       "ervas": ["Casca de Tangerina", "Calêndula", "Canela em Pó", "Semente de Coentro"],
       "explicacao": "A casca de tangerina rompe bloqueios de estagnação financeira; a calêndula eleva o merecimento de receber abundância; a canela em pó dinamiza as vendas; a semente de coentro limpa crenças limitantes sobre dinheiro.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para dinamismo financeiro e quebra de bloqueios de merecimento.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Casca de Tangerina, Calêndula, Canela em Pó, Semente de Coentro), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de tangerina e as sementes de coentro amassadas por 3 minutos. Desligue, adicione a canela em pó e a calêndula. Abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
     },
     {
       "id": 35,
-      "titulo": "35. Banho Prosperidade — Ciclo 5",
+      "titulo": "Brilho e Reconhecimento",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para brilho e prosperidade associados ao valor do próprio trabalho.",
+      "finalidade": "Brilho e prosperidade associados ao valor do próprio trabalho.",
       "ervas": ["Anis-Estrelado", "Noz-Moscada", "Casca de Laranja", "Rosa Amarela"],
       "explicacao": "O anis-estrelado atrai oportunidades valiosas; a noz-moscada favorece a intuição comercial; a casca de laranja energiza a alegria de produzir; a rosa amarela garante que seu valor pessoal seja reconhecido financeiramente.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para brilho e prosperidade associados ao valor do próprio trabalho.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Anis-Estrelado, Noz-Moscada, Casca de Laranja, Rosa Amarela), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja, os anis-estrelados e uma pitada de noz-moscada por 3 minutos. Desligue, adicione as pétalas de rosa amarela. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 36,
-      "titulo": "36. Banho Prosperidade — Ciclo 6",
+      "titulo": "Bases de Estabilidade",
       "direcionamento": "Geral",
       "categoria": "Prosperidade",
-      "finalidade": "Desenvolvido para construção de bases sólidas para a estabilidade material.",
+      "finalidade": "Construção de bases sólidas para a estabilidade material.",
       "ervas": ["Raiz de Vetiver", "Louro", "Semente de Girassol", "Casca de Bergamota"],
       "explicacao": "A raiz de vetiver garante solidez e estrutura para guardar e multiplicar recursos; o louro sela o sucesso financeiro; a semente de girassol foca no crescimento constante; a casca de bergamota movimenta novas fontes de ganho.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para construção de bases sólidas para a estabilidade material.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Raiz de Vetiver, Louro, Semente de Girassol, Casca de Bergamota), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de vetiver picada, as cascas de bergamota e o louro por 5 minutos. Desligue, junte as sementes de girassol. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 37,
-      "titulo": "37. Banho Autoestima e Poder — Ciclo 1",
+      "titulo": "Altivez e Poder Pessoal",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para resgate do poder pessoal, dignidade e altivez.",
+      "finalidade": "Resgate do poder pessoal, dignidade e altivez.",
       "ervas": ["Alecrim", "Hibisco", "Rosa Vermelha", "Semente de Girassol"],
       "explicacao": "O alecrim restaura a força de vontade e o ânimo próprio; o hibisco expande a autoconfiança visível; a rosa vermelha alimenta o amor-próprio inegociável; a semente de girassol eleva a postura perante os outros.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para resgate do poder pessoal, dignidade e altivez.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Alecrim, Hibisco, Rosa Vermelha, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as sementes de girassol por 3 minutos. Desligue, adicione o alecrim, o hibisco e as pétalas de rosa vermelha. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 38,
-      "titulo": "38. Banho Autoestima e Poder — Ciclo 2",
+      "titulo": "Leveza sem Cobrança",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para reconhecimento do próprio valor sem autocobrança excessiva.",
+      "finalidade": "Reconhecimento do próprio valor sem autocobrança excessiva.",
       "ervas": ["Calêndula", "Casca de Laranja", "Macassá", "Camomila"],
       "explicacao": "A calêndula traz o brilho de aceitação pessoal; a casca de laranja dissolve a culpa e traz leveza; o macassá exala a doçura de se amar; a camomila acalma a autocrítica severa e o perfeccionismo.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para reconhecimento do próprio valor sem autocobrança excessiva.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Calêndula, Casca de Laranja, Macassá, Camomila), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de laranja por 3 minutos. Desligue, acrescente a calêndula, o macassá e a camomila. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 39,
-      "titulo": "39. Banho Autoestima e Poder — Ciclo 3",
+      "titulo": "Fogo Interno",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para força de vontade inabalável e coragem para ocupar espaço.",
+      "finalidade": "Força de vontade inabalável e coragem para ocupar espaço.",
       "ervas": ["Raiz de Gengibre", "Alecrim", "Cravo-da-Índia", "Louro"],
       "explicacao": "A raiz de gengibre desperta o fogo interno de atitude; o alecrim traz firmeza de propósitos; o cravo da Índia protege sua coragem contra opiniões alheias; o louro garante a vitória ao ocupar seu espaço de direito.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para força de vontade inabalável e coragem para ocupar espaço.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Raiz de Gengibre, Alecrim, Cravo-da-Índia, Louro), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de gengibre ralada, os cravos e o louro por 4 minutos. Desligue, junte o alecrim. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 40,
-      "titulo": "40. Banho Autoestima e Poder — Ciclo 4",
+      "titulo": "Acolhimento da Alma",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para acolhimento íntimo, paz com a própria história e autocompaixão.",
+      "finalidade": "Acolhimento íntimo, paz com a própria história e autocompaixão.",
       "ervas": ["Rosa Branca", "Lavanda", "Macassá", "Noz-Moscada"],
       "explicacao": "A rosa branca purifica as cicatrizes emocionais do passado; a lavanda pacifica a mente de julgamentos severos; o macassá envolve a alma em aconchego; a noz-moscada traz clareza intuitiva sobre o próprio valor.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para acolhimento íntimo, paz com a própria história e autocompaixão.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Rosa Branca, Lavanda, Macassá, Noz-Moscada), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com uma pitada de noz-moscada por 2 minutos. Desligue, adicione a lavanda, o macassá e as pétalas de rosa branca. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 41,
-      "titulo": "41. Banho Autoestima e Poder — Ciclo 5",
+      "titulo": "Radiância Vital",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para radiância, vitalidade expressiva e confiança corporal.",
+      "finalidade": "Radiância, vitalidade expressiva e confiança corporal.",
       "ervas": ["Hibisco", "Alecrim", "Canela em Casca", "Semente de Girassol"],
       "explicacao": "O hibisco exalta a beleza e a presença marcante; o alecrim energiza o tônus vital; a canela em casca esquenta o magnetismo e a autopercepção positiva; a semente de girassol irradia a luz pessoal sem reservas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para radiância, vitalidade expressiva e confiança corporal.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Hibisco, Alecrim, Canela em Casca, Semente de Girassol), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com a canela em casca e as sementes de girassol por 4 minutos. Desligue, junte o hibisco e o alecrim. Abafe por 10 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 42,
-      "titulo": "42. Banho Autoestima e Poder — Ciclo 6",
+      "titulo": "Essência e Suavidade",
       "direcionamento": "Geral",
       "categoria": "Autoestima e Poder",
-      "finalidade": "Desenvolvido para leveza e suavidade no reconhecimento da própria beleza interior.",
+      "finalidade": "Leveza e suavidade no reconhecimento da própria beleza interior.",
       "ervas": ["Camomila", "Rosa Amarela", "Folha de Laranjeira", "Jasmim"],
       "explicacao": "A camomila suaviza a relação com o próprio corpo e mente; a rosa amarela ilumina a expressão sutil; a folha de laranjeira traz paz e alegria íntima; o jasmim eleva a percepção da própria essência espiritual.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para leveza e suavidade no reconhecimento da própria beleza interior.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Camomila, Rosa Amarela, Folha de Laranjeira, Jasmim). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água, desligue o fogo e acrescente a camomila, a folha de laranjeira, o jasmim e as pétalas de rosa amarela. Abafe por 10 minutos, coe delicadamente e tome do pescoço para baixo."
     },
     {
       "id": 43,
-      "titulo": "43. Banho Proteção — Ciclo 1",
+      "titulo": "Escudo Diário",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para escudo energético diário contra energias externas densas.",
+      "finalidade": "Escudo energético diário contra energias externas densas.",
       "ervas": ["Guiné", "Aroeira", "Espada-de-São-Jorge", "Alecrim"],
       "explicacao": "A guiné intercepta e consome cargas densas; a aroeira fecha o corpo contra influências nocivas; a espada-de-são-jorge atua como barreira intransponível; o alecrim mantém a vibração elevada e protegida.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para escudo energético diário contra energias externas densas.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Guiné, Aroeira, Espada-de-São-Jorge, Alecrim). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água, desligue o fogo e adicione as ervas frescas picadas (Guiné, Aroeira, tiras de Espada-de-São-Jorge e Alecrim). Abafe por 15 minutos com tampa, coe rigorosamente e tome do pescoço para baixo."
     },
     {
       "id": 44,
-      "titulo": "44. Banho Proteção — Ciclo 2",
+      "titulo": "Blindagem Anti-Vampirismo",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para blindagem e aterramento contra vampirismo astral.",
+      "finalidade": "Blindagem e aterramento contra vampirismo astral.",
       "ervas": ["Raiz de Vetiver", "Cravo da Índia", "Louro", "Poejo"],
       "explicacao": "A raiz de vetiver ancora o campo magnético contra drenagens; o cravo da Índia blinda e sela os chakras inferiores; o louro direciona a energia para a soberania pessoal; o poejo limpa os pensamentos de interferências externas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para blindagem e aterramento contra vampirismo astral.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Raiz de Vetiver, Cravo da Índia, Louro, Poejo), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de vetiver picada, os cravos e o louro por 5 minutos. Desligue, junte o poejo. Abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
     },
     {
       "id": 45,
-      "titulo": "45. Banho Proteção — Ciclo 3",
+      "titulo": "Santuário do Lar e da Aura",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para proteção pacífica do campo mental e emocional do lar e da aura.",
+      "finalidade": "Proteção pacífica do campo mental e emocional do lar e da aura.",
       "ervas": ["Lavanda", "Camomila", "Rosa Branca", "Folha de Abacateiro"],
       "explicacao": "A lavanda cria um campo de paz que afasta energias agitadas; a camomila acolhe e protege contra o estresse alheio; a rosa branca blindagem suave com frequência de luz; a folha de abacateiro traz estabilidade e proteção ao campo.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para proteção pacífica do campo mental e emocional do lar e da aura.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Lavanda, Camomila, Rosa Branca, Folha de Abacateiro). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água, desligue o fogo e adicione a folha de abacateiro, a camomila, a lavanda e as pétalas de rosa branca. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 46,
-      "titulo": "46. Banho Proteção — Ciclo 4",
+      "titulo": "Fechamento de Corpo",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para limpeza de egrégoras pesadas e fechamento de corpo.",
+      "finalidade": "Limpeza de egrégoras pesadas e fechamento de corpo.",
       "ervas": ["Aroeira", "Eucalipto", "Casca de Limão Siciliano", "Guiné"],
       "explicacao": "A aroeira quebra e afasta correntes pesadas; o eucalipto desinfeta o campo áurico de miasmas; a casca de limão siciliano neutraliza resíduos de ambientes densos; a guiné garante o fechamento definitivo do corpo.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para limpeza de egrégoras pesadas e fechamento de corpo.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Aroeira, Eucalipto, Casca de Limão Siciliano, Guiné), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as cascas de limão siciliano por 3 minutos. Desligue, junte a aroeira, o eucalipto e a guiné. Abafe por 12 minutos, coe bem e tome do pescoço para baixo."
     },
     {
       "id": 47,
-      "titulo": "47. Banho Proteção — Ciclo 5",
+      "titulo": "Vigilância Serena",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para equilíbrio entre firmeza defensiva e serenidade espiritual.",
+      "finalidade": "Equilíbrio entre firmeza defensiva e serenidade espiritual.",
       "ervas": ["Alecrim", "Louro", "Lavanda", "Semente de Girassol"],
       "explicacao": "O alecrim traz força e vigilância ativa; o louro sela a vitória da sua energia; a lavanda mantém o equilíbrio emocional sem perder a guarda; a semente de girassol irradia uma barreira solar de proteção.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para equilíbrio entre firmeza defensiva e serenidade espiritual.",
-      "preparo": "Ferva 2 litros de água, desligue o fogo imediatamente e acrescente os elementos botânicos (Alecrim, Louro, Lavanda, Semente de Girassol). Cubra com uma tampa para abafar por 10 minutos. Espere amornar, coe bem e faça seu banho do pescoço para baixo."
+      "preparo": "Ferva 1,5 litro de água com as sementes de girassol e o louro por 3 minutos. Desligue, acrescente o alecrim e a lavanda. Abafe por 10 minutos, coe e tome do pescoço para baixo."
     },
     {
       "id": 48,
-      "titulo": "48. Banho Proteção — Ciclo 6",
+      "titulo": "Corte de Intrigas",
       "direcionamento": "Geral",
       "categoria": "Proteção",
-      "finalidade": "Desenvolvido para vigilância energética, corte de intrigas e proteção de caminhos.",
+      "finalidade": "Vigilância energética, corte de intrigas e proteção de caminhos.",
       "ervas": ["Espada-de-São-Jorge", "Raiz de Vetiver", "Cravo da Índia", "Poejo"],
       "explicacao": "A espada-de-são-jorge afasta fofocas e intrigas maliciosas; a raiz de vetiver ancora o praticante na sua verdade; o cravo da Índia blinda o campo contra ataques sutis; o poejo limpa o ambiente mental de armadilhas energéticas.",
       "intencao": "Que este banho limpe, fortifique e alinhe minha energia para vigilância energética, corte de intrigas e proteção de caminhos.",
-      "preparo": "Ferva 2 litros de água com as cascas, raízes e sementes por 4 minutos para extrair a força bruta. Desligue o fogo, adicione as folhas e flores (Espada-de-São-Jorge, Raiz de Vetiver, Cravo da Índia, Poejo), abafe por 10 minutos, coe com cuidado e tome do pescoço para baixo."
+      "preparo": "Ferva 2 litros de água com a raiz de vetiver picada e os cravos da índia por 5 minutos. Desligue, adicione as tiras de espada-de-são-jorge e o poejo. Abafe por 12 minutos, coe perfeitamente e tome do pescoço para baixo."
     }
   ]
 }
