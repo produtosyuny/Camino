@@ -150,6 +150,14 @@
             border-color: var(--accent-rose);
         }
 
+        .module-box {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            padding: 24px;
+            border-radius: 6px;
+            margin: 20px 0;
+        }
+
         /* ESTILOS DA SANFONA (FICHAS EXPANSÍVEIS) */
         .accordion-header {
             background-color: var(--bg-surface);
@@ -296,7 +304,6 @@
             `;
         }
 
-        // Função para transformar texto de substituição em links mágicos
         function linkifySubstitutos(texto) {
             if(!texto) return "";
             let textLinked = texto;
@@ -311,7 +318,6 @@
             return textLinked;
         }
 
-        // Função para expandir e fechar a sanfona
         function toggleAccordion(id) {
             const body = document.getElementById('ficha-body-' + id);
             const headerSign = document.getElementById('icon-' + id);
@@ -325,10 +331,8 @@
             }
         }
 
-        // Abre uma erva específica vindo de um link
         function abrirFicha(nomeErva) {
             loadView('fichas');
-            // Remove acentos e padroniza para achar o ID exato
             const safeId = nomeErva.normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
             const targetBody = document.getElementById('ficha-body-' + safeId);
             const targetHeader = document.getElementById('icon-' + safeId);
@@ -343,7 +347,6 @@
             }
         }
 
-        // Carrega categoria e rola até o banho exato
         function irParaBanho(categoria, idBanho) {
             loadCategory(categoria);
             setTimeout(() => {
@@ -362,6 +365,9 @@
             document.getElementById('mainScroll').scrollTop = 0;
             
             if (viewKey === 'inicio') {
+                let mod1Text = (appData.modulos && appData.modulos.mod1) ? appData.modulos.mod1 : '';
+                let mod2Text = (appData.modulos && appData.modulos.mod2) ? appData.modulos.mod2 : '';
+
                 container.innerHTML = `
                     <h1 class="page-title">${appData.titulo || 'Banhos de Ervas'}</h1>
                     <p><em>${appData.subtitulo || ''}</em></p>
@@ -372,6 +378,20 @@
 
                     <h3>Como usar este guia</h3>
                     <p>${appData.como_usar || ''}</p>
+
+                    ${mod1Text ? `
+                        <div class="module-box">
+                            <h3 style="margin-top:0; color: var(--accent-rose-dark);">Módulo I: A Matriz dos Banhos</h3>
+                            <p style="margin-bottom:0;">${mod1Text}</p>
+                        </div>
+                    ` : ''}
+
+                    ${mod2Text ? `
+                        <div class="module-box">
+                            <h3 style="margin-top:0; color: var(--accent-rose-dark);">Módulo II: Classificação Térmica</h3>
+                            <p style="margin-bottom:0;">${mod2Text}</p>
+                        </div>
+                    ` : ''}
                 `;
             } else if (viewKey === 'fichas') {
                 const fichas = appData.fichas_ervas || [];
@@ -440,7 +460,6 @@
             }
 
             filteredBanhos.forEach(b => {
-                // Transforma cada ingrediente da lista num botão clicável para sua ficha
                 let ervasHtml = b.ervas.map(e => `<span class="herb-tag" onclick="abrirFicha('${e}')" title="Ver ficha de ${e}">${e}</span>`).join(' ');
                 
                 html += `
