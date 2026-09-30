@@ -89,7 +89,7 @@
             font-weight: 400;
         }
 
-        main.content-area { flex: 1; height: 100%; overflow-y: auto; padding: 50px 70px; }
+        main.content-area { flex: 1; height: 100%; overflow-y: auto; padding: 50px 70px; scroll-behavior: smooth; }
         .content-container { max-width: 800px; margin: 0 auto; }
 
         h1.page-title {
@@ -100,11 +100,7 @@
             padding-bottom: 14px;
         }
 
-        h3 { font-size: 1.5rem; margin: 28px 0 12px; color: var(--accent-rose-dark); }
         p { margin-bottom: 16px; }
-        ul { list-style: none; margin-bottom: 20px; }
-        ul li { position: relative; padding-left: 20px; margin-bottom: 8px; }
-        ul li::before { content: "—"; position: absolute; left: 0; color: var(--accent-rose); }
 
         .recipe-card {
             background-color: var(--bg-surface);
@@ -113,9 +109,10 @@
             margin-bottom: 24px;
             border-radius: 6px;
             box-shadow: 0 2px 6px rgba(0,0,0,0.01);
+            transition: var(--transition);
         }
 
-        .recipe-card h4 { font-size: 1.5rem; margin-bottom: 4px; }
+        .recipe-card h4 { font-size: 1.5rem; margin-bottom: 4px; color: var(--accent-rose-dark); }
         .recipe-meta {
             font-size: 0.8rem;
             text-transform: uppercase;
@@ -145,6 +142,61 @@
             font-size: 0.85rem;
             display: inline-block;
             margin: 2px;
+        }
+
+        /* ESTILOS DA SANFONA (FICHAS EXPANSÍVEIS) */
+        .accordion-header {
+            background-color: var(--bg-surface);
+            border: 1px solid var(--border-subtle);
+            padding: 16px 24px;
+            border-radius: 6px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 8px;
+            transition: var(--transition);
+        }
+        .accordion-header:hover {
+            border-color: var(--accent-rose);
+            background-color: #fdfdfb;
+        }
+        .accordion-header h4 {
+            margin: 0;
+            font-size: 1.4rem;
+        }
+        .accordion-body {
+            display: none;
+            padding: 24px;
+            border: 1px solid var(--border-subtle);
+            border-top: none;
+            border-radius: 0 0 6px 6px;
+            background-color: var(--bg-surface);
+            margin-top: -12px;
+            margin-bottom: 24px;
+        }
+        .accordion-body.active {
+            display: block;
+            animation: fadeIn 0.3s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        /* LINKS INTELIGENTES (BANHOS E ERVAS) */
+        .smart-link {
+            color: var(--accent-rose);
+            text-decoration: none;
+            font-weight: 500;
+            cursor: pointer;
+            border-bottom: 1px dashed var(--accent-rose);
+            transition: var(--transition);
+        }
+        .smart-link:hover {
+            color: var(--accent-rose-dark);
+            border-bottom: 1px solid var(--accent-rose-dark);
         }
 
         .mobile-menu-btn {
@@ -183,7 +235,7 @@
         <nav class="nav-tree" id="navTree"></nav>
     </aside>
 
-    <main class="content-area">
+    <main class="content-area" id="mainScroll">
         <div class="content-container" id="contentContainer"></div>
     </main>
 
@@ -213,19 +265,19 @@
                 <div class="nav-section">
                     <div class="nav-section-title">Direcionamentos</div>
                     <ul class="nav-items">
-                        <li><a href="#" onclick="loadCategory('Exu'); closeMobileMenu();">Banhos de Exu</a></li>
-                        <li><a href="#" onclick="loadCategory('Pombagira'); closeMobileMenu();">Banhos de Pombagira</a></li>
+                        <li><a href="#" onclick="loadCategory('Exu'); closeMobileMenu();" id="link-cat-Exu">Banhos de Exu</a></li>
+                        <li><a href="#" onclick="loadCategory('Pombagira'); closeMobileMenu();" id="link-cat-Pombagira">Banhos de Pombagira</a></li>
                     </ul>
                 </div>
                 <div class="nav-section">
                     <div class="nav-section-title">Banhos por Finalidade</div>
                     <ul class="nav-items">
-                        <li><a href="#" onclick="loadCategory('Limpeza Energética'); closeMobileMenu();">Limpeza Energética</a></li>
-                        <li><a href="#" onclick="loadCategory('Amor e Magnetismo'); closeMobileMenu();">Amor e Magnetismo</a></li>
-                        <li><a href="#" onclick="loadCategory('Trabalho e Caminhos'); closeMobileMenu();">Trabalho e Caminhos</a></li>
-                        <li><a href="#" onclick="loadCategory('Prosperidade'); closeMobileMenu();">Prosperidade</a></li>
-                        <li><a href="#" onclick="loadCategory('Autoestima e Poder'); closeMobileMenu();">Autoestima e Poder</a></li>
-                        <li><a href="#" onclick="loadCategory('Proteção'); closeMobileMenu();">Proteção</a></li>
+                        <li><a href="#" onclick="loadCategory('Limpeza Energética'); closeMobileMenu();" id="link-cat-Limpeza-Energética">Limpeza Energética</a></li>
+                        <li><a href="#" onclick="loadCategory('Amor e Magnetismo'); closeMobileMenu();" id="link-cat-Amor-e-Magnetismo">Amor e Magnetismo</a></li>
+                        <li><a href="#" onclick="loadCategory('Trabalho e Caminhos'); closeMobileMenu();" id="link-cat-Trabalho-e-Caminhos">Trabalho e Caminhos</a></li>
+                        <li><a href="#" onclick="loadCategory('Prosperidade'); closeMobileMenu();" id="link-cat-Prosperidade">Prosperidade</a></li>
+                        <li><a href="#" onclick="loadCategory('Autoestima e Poder'); closeMobileMenu();" id="link-cat-Autoestima-e-Poder">Autoestima e Poder</a></li>
+                        <li><a href="#" onclick="loadCategory('Proteção'); closeMobileMenu();" id="link-cat-Proteção">Proteção</a></li>
                     </ul>
                 </div>
                 <div class="nav-section">
@@ -238,9 +290,77 @@
             `;
         }
 
+        // Função para transformar texto de ervas em links mágicos
+        function linkifySubstitutos(texto) {
+            if(!texto) return "";
+            let textLinked = texto;
+            const fichas = appData.fichas_ervas || [];
+            
+            // Ordenar por tamanho da palavra para evitar que "Rosa" quebre "Rosa Branca"
+            const sortedFichas = [...fichas].sort((a,b) => b.nome.length - a.nome.length);
+            
+            sortedFichas.forEach(f => {
+                // Regex para encontrar a erva (ignorando maiusculas/minusculas)
+                const regex = new RegExp("(" + f.nome + ")", "gi");
+                textLinked = textLinked.replace(regex, `<a class="smart-link" onclick="abrirFicha('${f.nome}')">$1</a>`);
+            });
+            return textLinked;
+        }
+
+        // Função para expandir e fechar a sanfona
+        function toggleAccordion(id) {
+            const body = document.getElementById('ficha-body-' + id);
+            const headerSign = document.getElementById('icon-' + id);
+            
+            if(body.classList.contains('active')) {
+                body.classList.remove('active');
+                headerSign.innerText = "+";
+            } else {
+                // Se quiser que abra apenas uma por vez, descomente a linha abaixo:
+                // document.querySelectorAll('.accordion-body').forEach(el => el.classList.remove('active'));
+                // document.querySelectorAll('.icon-sign').forEach(el => el.innerText = "+");
+                
+                body.classList.add('active');
+                headerSign.innerText = "—";
+            }
+        }
+
+        // Abre uma erva específica vindo de um link
+        function abrirFicha(nomeErva) {
+            loadView('fichas');
+            const safeId = nomeErva.replace(/\\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
+            const targetBody = document.getElementById('ficha-body-' + safeId);
+            const targetHeader = document.getElementById('icon-' + safeId);
+            
+            if(targetBody) {
+                targetBody.classList.add('active');
+                targetHeader.innerText = "—";
+                
+                // Rolar até ela
+                setTimeout(() => {
+                    targetBody.previousElementSibling.scrollIntoView({behavior: 'smooth', block: 'center'});
+                }, 100);
+            }
+        }
+
+        // Carrega categoria e rola até o banho exato
+        function irParaBanho(categoria, idBanho) {
+            loadCategory(categoria);
+            setTimeout(() => {
+                const cardBanho = document.getElementById('banho-' + idBanho);
+                if(cardBanho) {
+                    cardBanho.scrollIntoView({behavior: 'smooth', block: 'center'});
+                    // Pisca a borda para destacar
+                    cardBanho.style.border = "2px solid var(--accent-rose)";
+                    setTimeout(() => cardBanho.style.border = "1px solid var(--border-subtle)", 2000);
+                }
+            }, 100);
+        }
+
         function loadView(viewKey) {
             setActiveLink('link-' + viewKey);
             const container = document.getElementById('contentContainer');
+            document.getElementById('mainScroll').scrollTop = 0;
             
             if (viewKey === 'inicio') {
                 container.innerHTML = `
@@ -258,29 +378,43 @@
                 const fichas = appData.fichas_ervas || [];
                 let html = `
                     <h1 class="page-title">Ficha das Ervas</h1>
-                    <p>Conheça a propriedade, energia predominante, classificação térmica e sugestões de substituição de cada elemento botânico, além de conferir em quais receitas eles atuam.</p>
+                    <p>Clique sobre uma erva para expandir suas propriedades, energia predominante e descobrir em quais receitas ela é utilizada.</p>
+                    <div style="margin-top: 24px;">
                 `;
 
                 fichas.forEach(f => {
                     const banhosRelacionados = (appData.banhos || []).filter(b => b.ervas.includes(f.nome));
-                    let banhosHtml = banhosRelacionados.map(b => `<li><strong>${b.titulo}</strong> (Cat: ${b.categoria})</li>`).join('');
+                    let banhosHtml = banhosRelacionados.map(b => `
+                        <li style="margin-bottom: 6px;">
+                            <a class="smart-link" onclick="irParaBanho('${b.categoria}', ${b.id})">${b.titulo}</a> 
+                            <span style="font-size: 0.8rem; color: var(--text-muted);">(${b.categoria})</span>
+                        </li>
+                    `).join('');
+
+                    let subtitutosComLinks = linkifySubstitutos(f.substituicao);
+                    let safeId = f.nome.replace(/\s+/g, '-').replace(/[^a-zA-Z0-9-]/g, '');
 
                     html += `
-                        <div class="recipe-card" style="margin-bottom: 28px;">
-                            <h4 style="font-size: 1.6rem; color: var(--accent-rose-dark); margin-bottom: 8px;">${f.nome}</h4>
-                            <div class="recipe-meta">Tipo: ${f.tipo} • Classificação: ${f.classificacao}</div>
+                        <div class="accordion-header" onclick="toggleAccordion('${safeId}')">
+                            <h4>${f.nome}</h4>
+                            <span class="icon-sign" id="icon-${safeId}" style="color: var(--accent-rose); font-size: 1.2rem; font-weight: bold;">+</span>
+                        </div>
+                        <div class="accordion-body" id="ficha-body-${safeId}">
+                            <div class="recipe-meta" style="margin-top:0;">Tipo: ${f.tipo} • Classificação: ${f.classificacao}</div>
                             <p><strong>Energia Predominante:</strong> ${f.energia}</p>
                             <p><strong>Utilização Prática:</strong> ${f.utilizacao}</p>
-                            <p><strong>Sugestão de Substituição:</strong> <span style="font-style: italic; color: var(--accent-rose-dark);">${f.substituicao}</span></p>
-                            <div style="margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border-subtle);">
-                                <p style="font-size: 0.9rem; font-weight: 500; margin-bottom: 6px; color: var(--accent-rose-dark);">Banhos que utilizam esta erva:</p>
-                                <ul style="font-size: 0.9rem; color: var(--text-muted); padding-left: 15px;">
-                                    ${banhosHtml || '<li>Nenhum banho cadastrado com esta erva no momento.</li>'}
+                            <p><strong>Substituição:</strong> <span style="font-style: italic; color: var(--text-main);">${subtitutosComLinks || 'Nenhuma sugerida.'}</span></p>
+                            
+                            <div style="margin-top: 18px; padding-top: 16px; border-top: 1px solid var(--border-subtle);">
+                                <p style="font-size: 0.95rem; font-weight: 500; margin-bottom: 8px; color: var(--accent-rose-dark);">Banhos que utilizam esta erva:</p>
+                                <ul style="list-style: none; margin-bottom: 0;">
+                                    ${banhosHtml || '<li style="font-size: 0.9rem; color: var(--text-muted);">Nenhum banho cadastrado com esta erva.</li>'}
                                 </ul>
                             </div>
                         </div>
                     `;
                 });
+                html += `</div>`;
                 container.innerHTML = html;
             } else if (viewKey === 'seguranca') {
                 container.innerHTML = `
@@ -291,7 +425,12 @@
         }
 
         function loadCategory(categoryName) {
+            const safeLinkId = 'link-cat-' + categoryName.replace(/\s+/g, '-');
+            setActiveLink(safeLinkId);
+            
             const container = document.getElementById('contentContainer');
+            document.getElementById('mainScroll').scrollTop = 0;
+            
             const listaBanhos = appData.banhos || [];
             const filteredBanhos = listaBanhos.filter(b => b.categoria === categoryName);
 
@@ -304,7 +443,7 @@
             filteredBanhos.forEach(b => {
                 let ervasHtml = b.ervas.map(e => `<span class="herb-tag">${e}</span>`).join(' ');
                 html += `
-                    <div class="recipe-card">
+                    <div class="recipe-card" id="banho-${b.id}">
                         <h4>${b.titulo}</h4>
                         <div class="recipe-meta">Direcionamento: ${b.direcionamento} • Categoria: ${b.categoria}</div>
                         <p><strong>Finalidade:</strong> ${b.finalidade}</p>
